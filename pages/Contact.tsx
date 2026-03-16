@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
           </p>
           
           <div className="space-y-8">
-            <div className="flex items-center gap-6 group">
+            <a href="tel:+919881103444" className="flex items-center gap-6 group">
               <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-md group-hover:bg-white/30 transition-all">
                 <Phone className="w-8 h-8" />
               </div>
@@ -56,9 +56,9 @@ const Contact: React.FC = () => {
                 <p className="text-sm font-bold uppercase tracking-widest opacity-60">Call Us</p>
                 <p className="text-2xl font-black">+91 9881103444</p>
               </div>
-            </div>
+            </a>
             
-            <div className="flex items-center gap-6 group">
+            <a href="https://wa.me/919881103444" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group">
               <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-md group-hover:bg-white/30 transition-all">
                 <MessageSquare className="w-8 h-8" />
               </div>
@@ -66,9 +66,9 @@ const Contact: React.FC = () => {
                 <p className="text-sm font-bold uppercase tracking-widest opacity-60">WhatsApp</p>
                 <p className="text-2xl font-black">+91 9881103444</p>
               </div>
-            </div>
+            </a>
             
-            <div className="flex items-center gap-6 group">
+            <a href="mailto:004neil@gmail.com" className="flex items-center gap-6 group">
               <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-md group-hover:bg-white/30 transition-all">
                 <Mail className="w-8 h-8" />
               </div>
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                 <p className="text-sm font-bold uppercase tracking-widest opacity-60">Email</p>
                 <p className="text-2xl font-black">004neil@gmail.com</p>
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="mt-16 flex flex-wrap gap-4">
