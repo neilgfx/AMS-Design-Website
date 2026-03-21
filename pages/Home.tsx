@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Zap, Target, MousePointer2, Monitor, Share2 } from 'lucide-react';
+import { ArrowUpRight, Zap, Target, MousePointer2, Monitor, Share2, CheckCircle2, ShoppingCart, BookOpen, Phone, Mail, PenTool, Gift } from 'lucide-react';
 import { SERVICES_SUMMARY, PHILOSOPHY_ITEMS } from '../constants';
 
 const Home: React.FC = () => {
   return (
     <div className="pt-20">
-      {/* Dynamic Hero */}
+      {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden px-4">
         <div className="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-teal-100 rounded-full blur-[120px] opacity-60 animate-pulse" />
         <div className="absolute bottom-20 left-[-10%] w-[400px] h-[400px] bg-rose-100 rounded-full blur-[100px] opacity-60" />
@@ -16,18 +16,18 @@ const Home: React.FC = () => {
             <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 px-4 py-2 rounded-full text-teal-700 text-sm font-bold mb-8">
               <Zap className="w-4 h-4" /> Energizing Vision into Reality
             </div>
-            <h1 className="text-6xl lg:text-8xl font-black text-slate-900 leading-[0.9] tracking-tighter mb-8">
-              Bridge the <span className="text-gradient">Visual Gap.</span>
+            <h1 className="text-4xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tighter mb-8">
+              Expert <span className="text-gradient">Website Design,</span> Branding & Digital Marketing Solutions
             </h1>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed font-medium max-w-lg">
-              Abridge Media Services provides the foundation your business needs to grow. From striking brand identities to high-converting digital platforms.
+              Abridge Media Services is a full-service creative agency dedicated to bridging the gap between imagination and execution. From powerful branding to cutting-edge Website Design & Development, we are your one-stop solution.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="px-10 py-5 bg-slate-900 text-white font-black rounded-2xl shadow-2xl hover:bg-slate-800 transition-all flex items-center gap-3">
-                Start Building <ArrowUpRight className="w-5 h-5" />
+              <Link to="/services" className="px-10 py-5 bg-slate-900 text-white font-black rounded-2xl shadow-2xl hover:bg-slate-800 transition-all flex items-center gap-3">
+                View Our Services <ArrowUpRight className="w-5 h-5" />
               </Link>
-              <Link to="/work" className="px-10 py-5 bg-white border-2 border-slate-100 text-slate-900 font-black rounded-2xl hover:border-teal-500 transition-all">
-                Our Work
+              <Link to="/contact" className="px-10 py-5 bg-white border-2 border-slate-100 text-slate-900 font-black rounded-2xl hover:border-teal-500 transition-all">
+                Get a Quote
               </Link>
             </div>
           </div>
@@ -54,80 +54,21 @@ const Home: React.FC = () => {
                   </div>
                 </div>
              </div>
-             {/* Floating Elements */}
-             <div className="absolute -top-6 -left-6 w-32 h-32 bg-white rounded-3xl shadow-xl flex items-center justify-center animate-bounce">
-                <MousePointer2 className="w-12 h-12 text-teal-500" />
-             </div>
           </div>
         </div>
       </section>
 
-      {/* Bento Pillar Grid */}
-      <section className="py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-20">
-            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6">Built on 4 Pillars</h2>
-            <p className="text-lg text-slate-500 font-medium leading-relaxed">We don't just do media. We build the architecture of your brand's future.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 auto-rows-[250px]">
-            {/* Pillar 1 - Large */}
-            <div className="md:col-span-2 md:row-span-2 bg-white rounded-[2.5rem] p-10 flex flex-col justify-between group border border-slate-100 hover:border-teal-300 transition-all card-shadow">
-               <div>
-                  <div className="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-teal-500 transition-colors">
-                     {SERVICES_SUMMARY[0].icon}
-                  </div>
-                  <h3 className="text-3xl font-black text-slate-900 mb-4">{SERVICES_SUMMARY[0].title}</h3>
-                  <p className="text-slate-500 text-lg leading-relaxed mb-4">
-                    At Abridge Media Services, our Brand Foundation pillar is dedicated to building strong visual identities from the ground up. We define exactly who you are by providing professional Logo Design and comprehensive Brand Style Guides. Beyond the core logo, we ensure your business is ready for the real world with essential stationery design, including business cards, letterheads, and custom icons, laying the groundwork for a cohesive and professional brand image.
-                  </p>
-               </div>
-               <Link to="/services" className="inline-flex items-center gap-2 font-bold text-teal-600 hover:underline">
-                  View Brand Packages <ArrowUpRight className="w-4 h-4" />
-               </Link>
-            </div>
-
-            {/* Pillar 2 */}
-            <div className="bg-rose-500 rounded-[2.5rem] p-8 text-white flex flex-col justify-center items-center text-center group hover:scale-[0.98] transition-transform">
-               <div className="mb-4 group-hover:rotate-12 transition-transform">
-                  <Monitor className="w-12 h-12" />
-               </div>
-               <h3 className="text-2xl font-black mb-2">{SERVICES_SUMMARY[1].title}</h3>
-               <p className="text-white/80 text-sm">{SERVICES_SUMMARY[1].description}</p>
-            </div>
-
-            {/* Pillar 3 */}
-            <div className="bg-indigo-600 rounded-[2.5rem] p-8 text-white flex flex-col justify-center items-center text-center group hover:scale-[0.98] transition-transform">
-               <div className="mb-4 group-hover:-rotate-12 transition-transform">
-                  <Share2 className="w-12 h-12" />
-               </div>
-               <h3 className="text-2xl font-black mb-2">{SERVICES_SUMMARY[2].title}</h3>
-               <p className="text-white/80 text-sm">{SERVICES_SUMMARY[2].description}</p>
-            </div>
-
-            {/* Pillar 4 - Wide Bottom */}
-            <div className="md:col-span-3 bg-slate-900 rounded-[2.5rem] p-10 flex items-center justify-between group overflow-hidden relative">
-               <div className="relative z-10">
-                  <h3 className="text-3xl font-black text-white mb-2">{SERVICES_SUMMARY[3].title}</h3>
-                  <p className="text-slate-400 max-w-md">{SERVICES_SUMMARY[3].description}</p>
-               </div>
-               <div className="w-32 h-32 bg-gradient-main rounded-full blur-[40px] opacity-40 absolute right-10 top-1/2 -translate-y-1/2" />
-               <Link to="/services" className="relative z-10 px-8 py-4 bg-white text-slate-900 font-black rounded-2xl hover:scale-105 transition-transform">
-                  Explore Plus
-               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Philosophy Section */}
+      {/* Introduction Section */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4">
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div>
-                 <h2 className="text-4xl lg:text-6xl font-black text-slate-900 leading-tight mb-8">Bridging the Gap is an <span className="text-teal-500 italic">Artform.</span></h2>
+                 <h2 className="text-4xl lg:text-6xl font-black text-slate-900 leading-tight mb-8">Your Partner in <span className="text-teal-500 italic">Design – Develop – Deliver</span></h2>
+                 <p className="text-lg text-slate-600 font-medium mb-8 leading-relaxed">
+                    In today’s fast-paced digital world, you need a partner who can handle every aspect of your visual identity. At Abridge Media Services, our philosophy is simple: Design - Develop. We understand that a strong business requires more than just a logo; it needs a cohesive digital presence and impactful marketing materials.
+                 </p>
                  <p className="text-lg text-slate-600 font-medium mb-12 leading-relaxed">
-                    We've spent years refining the transition between abstract design and technical deployment. Our process ensures that nothing is lost in translation.
+                    Whether you are a startup looking for a fresh identity or an established firm seeking to revitalize your digital presence, we are here to energize your vision. Let us be the creative spark that drives your business forward through expert Graphic Designing and strategic Digital Marketing.
                  </p>
                  <div className="space-y-8">
                     {PHILOSOPHY_ITEMS.map((item, idx) => (
@@ -159,16 +100,231 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Interactive CTA */}
-      <section className="py-24 px-4">
-        <div className="max-w-7xl mx-auto bg-gradient-main p-16 lg:p-24 rounded-[4rem] text-center relative overflow-hidden">
-           <div className="absolute top-[-50%] left-[-10%] w-[120%] h-[200%] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none" />
-           <h2 className="text-5xl lg:text-7xl font-black text-white mb-10 relative z-10">Energize your vision.</h2>
-           <div className="flex justify-center gap-6 relative z-10 flex-wrap">
-              <Link to="/contact" className="px-12 py-6 bg-white text-slate-900 font-black rounded-2xl shadow-2xl hover:scale-105 transition-transform text-xl">
-                 Let's Start Project
+      {/* Our Core Services Section */}
+      <section className="py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6">Our Core Services</h2>
+            <p className="text-lg text-slate-500 font-medium leading-relaxed">
+              We structure our expertise into four core pillars to ensure your brand shines across every platform. We offer comprehensive Website Design & Development, Graphic Designing, and Digital Marketing services tailored to your needs.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Pillar 1 */}
+            <div className="bg-white rounded-[2.5rem] p-10 flex flex-col group border border-slate-100 hover:border-teal-300 transition-all card-shadow">
+              <div className="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-teal-500 transition-colors">
+                <PenTool className="w-8 h-8 text-teal-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-3xl font-black text-slate-900 mb-4">1. Brand Foundation (Graphic Designing)</h3>
+              <p className="text-slate-500 text-lg leading-relaxed mb-6">We build strong identities from the ground up. Our Graphic Designing team ensures that who you are is clearly defined visually.</p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {['Logo Design', 'Brand Identity & Style Guides', 'Business Card Design', 'Stationery Design', 'Icon Design'].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
+                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-teal-600 hover:underline">
+                Learn More <ArrowUpRight className="w-4 h-4" />
               </Link>
-           </div>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="bg-white rounded-[2.5rem] p-10 flex flex-col group border border-slate-100 hover:border-blue-300 transition-all card-shadow">
+              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-500 transition-colors">
+                <Monitor className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-3xl font-black text-slate-900 mb-4">2. Digital Experience</h3>
+              <p className="text-slate-500 text-lg leading-relaxed mb-6">We take your brand online with state-of-the-art Website Design & Development. We create digital experiences that engage visitors and convert them into customers.</p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {['Website and UI/UX Design', 'Web Banner Design', 'Thumbnails', 'Online Graphic Creation', 'HTML Conversion', 'Digital Marketing'].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
+                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-blue-600 hover:underline">
+                Learn More <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="bg-white rounded-[2.5rem] p-10 flex flex-col group border border-slate-100 hover:border-rose-300 transition-all card-shadow">
+              <div className="w-16 h-16 bg-rose-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-rose-500 transition-colors">
+                <Share2 className="w-8 h-8 text-rose-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-3xl font-black text-slate-900 mb-4">3. Marketing & Print (Digital Marketing)</h3>
+              <p className="text-slate-500 text-lg leading-relaxed mb-6">From brochures to social media assets, we craft tangible and digital materials that leave a lasting impression. Our Digital Marketing services help you reach the right audience.</p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {['Brochure and Flyer Design', 'Advertisement Creative Design', 'Social Media Graphics', 'Presentation Design', 'Posters, Menus, Signage & Banners'].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
+                    <div className="w-1.5 h-1.5 bg-rose-500 rounded-full" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-rose-600 hover:underline">
+                Learn More <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Pillar 4 */}
+            <div className="bg-white rounded-[2.5rem] p-10 flex flex-col group border border-slate-100 hover:border-indigo-300 transition-all card-shadow">
+              <div className="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-500 transition-colors">
+                <Gift className="w-8 h-8 text-indigo-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-3xl font-black text-slate-900 mb-4">4. The Plus (Specialized Services)</h3>
+              <p className="text-slate-500 text-lg leading-relaxed mb-6">We go beyond the basics with specialized design services that make your products pop.</p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {['Packaging and Merchandise Design', 'Cap & T-Shirt Designing and Printing', 'Book Cover Design', 'Label Design'].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
+                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-indigo-600 hover:underline">
+                Learn More <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-slate-900 rounded-[4rem] p-12 lg:p-20 text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/20 rounded-full blur-[100px]" />
+            <div className="relative z-10">
+              <h2 className="text-4xl lg:text-5xl font-black mb-12">Why Choose Us?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold mb-6 text-teal-400">Affordable & Transparent Packages</h3>
+                  <p className="text-slate-300 text-lg mb-8">
+                    We believe in transparency. Whether you need a simple Logo Design or a full E-commerce Website, our pricing is competitive and clear.
+                  </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-teal-500 shrink-0 mt-1" />
+                      <span>Graphic Design: Starting from ₹400 ($5) for Social Media Posters to ₹5000 ($75) for Premium Logo Design.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-teal-500 shrink-0 mt-1" />
+                      <span>Website Development: Professional 5-7 page websites starting from ₹16,000 ($182).</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-teal-500 shrink-0 mt-1" />
+                      <span>E-commerce Solutions: Complete online stores with payment gateway integration starting at ₹45,000 ($550).</span>
+                    </li>
+                  </ul>
+                  <p className="mt-8 text-sm text-slate-400 italic">
+                    Maximum 3 design revisions included. Content and images provided by the client.
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-full max-w-sm aspect-square bg-gradient-main rounded-3xl flex items-center justify-center p-12 text-center">
+                    <div>
+                      <Zap className="w-16 h-16 mx-auto mb-6" />
+                      <p className="text-2xl font-black">Bridge the gap between imagination and execution today.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Creativelyink Store Section */}
+      <section className="py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 bg-rose-50 border border-rose-200 px-4 py-2 rounded-full text-rose-700 text-sm font-bold mb-8">
+            <ShoppingCart className="w-4 h-4" /> Creativelyink Store
+          </div>
+          <h2 className="text-4xl lg:text-6xl font-black text-slate-900 mb-8">Need Instant Solutions?</h2>
+          <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto font-medium">
+            Visit our store, Creativelyink, for ready-made creative assets. Perfect for startups and DIY enthusiasts, we offer high-quality templates you can download instantly.
+          </p>
+          <div className="bg-white rounded-[3rem] p-12 border border-slate-100 shadow-xl mb-12 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-6">What We Sell:</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {['Logo Templates', 'T-shirt Designs', 'E-books', 'Posters', 'And more...'].map((item, i) => (
+                <span key={i} className="px-6 py-3 bg-slate-50 rounded-xl font-bold text-slate-700">{item}</span>
+              ))}
+            </div>
+          </div>
+          <a href="https://payhip.com/Creativelyink" target="_blank" rel="noopener noreferrer" className="px-12 py-6 bg-gradient-main text-white font-black rounded-2xl shadow-2xl hover:scale-105 transition-transform text-xl inline-flex items-center gap-3">
+            Shop Templates at Creativelyink <ArrowUpRight className="w-6 h-6" />
+          </a>
+        </div>
+      </section>
+
+      {/* Stay Updated Section */}
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 bg-teal-500 rounded-[4rem] p-12 lg:p-20 text-white">
+            <div className="max-w-xl">
+              <h2 className="text-4xl lg:text-5xl font-black mb-6">Stay Updated</h2>
+              <h3 className="text-2xl font-bold mb-4 opacity-90">The Creative Blog</h3>
+              <p className="text-lg opacity-80 mb-8">
+                Insights, tips, and trends on Website Design, Digital Marketing, and Graphic Designing.
+              </p>
+              <a href="https://creativelyink.blogspot.com/" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white text-teal-600 font-black rounded-2xl shadow-xl hover:bg-slate-50 transition-all inline-flex items-center gap-3">
+                Read Our Blog <BookOpen className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="w-full lg:w-1/3 aspect-video bg-white/20 rounded-3xl backdrop-blur-md flex items-center justify-center">
+              <BookOpen className="w-24 h-24 opacity-40" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us Section */}
+      <section className="py-32 bg-slate-50 px-4">
+        <div className="max-w-7xl mx-auto bg-white p-12 lg:p-24 rounded-[4rem] shadow-2xl border border-slate-100">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8">Contact Us</h2>
+              <p className="text-xl text-slate-600 mb-12 font-medium">
+                Ready to start your project? Whether you need a custom quote or want to discuss our packages, we are here to help.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wider">Mobile / WhatsApp</p>
+                    <a href="tel:+919881103444" className="text-xl font-black text-slate-900 hover:text-teal-600 transition-colors">+91 9881103444</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center text-rose-600">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wider">Email</p>
+                    <a href="mailto:004neil@gmail.com" className="text-xl font-black text-slate-900 hover:text-rose-600 transition-colors">004neil@gmail.com</a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600">
+                    <Target className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wider">Location</p>
+                    <p className="text-xl font-black text-slate-900">Serving Clients Globally</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center">
+              <Link to="/contact" className="w-full py-8 bg-gradient-main text-white font-black text-2xl rounded-[2rem] shadow-2xl hover:scale-[1.02] transition-transform text-center flex items-center justify-center gap-4">
+                Request a Quote for Custom Services <ArrowUpRight className="w-8 h-8" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>

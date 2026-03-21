@@ -17,7 +17,7 @@ const Services: React.FC = () => {
       title: "Digital Experience",
       icon: <Globe className="w-10 h-10" />,
       description: "We bridge the gap between code and creativity to deliver high-performance digital platforms that convert visitors into loyal customers.",
-      items: ["Website & UI/UX design", "Web banners", "Thumbnails", "Online graphic creation"],
+      items: ["Website & UI/UX design", "Web banners", "Thumbnails", "Online graphic creation", "Digital Marketing"],
       colorClass: "bg-blue-500",
       textClass: "text-blue-600",
       bgSoft: "bg-blue-50"

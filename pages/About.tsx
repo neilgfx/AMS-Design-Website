@@ -40,8 +40,9 @@ const About: React.FC = () => {
             <div className="flex-1 w-full lg:w-auto h-80 lg:h-[500px] relative">
               <div className="absolute inset-0 bg-gradient-main rounded-3xl rotate-3 scale-95 opacity-20" />
               <img 
-                src="https://picsum.photos/800/800?grayscale=0&random=1" 
-                alt="Creative Workspace" 
+                src="https://lh3.googleusercontent.com/d/1iMgVNEPo6skZx88XQlmk5abxLJEt9wCb" 
+                alt="Abridge Media Services Team" 
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover rounded-3xl shadow-2xl -rotate-2 transform hover:rotate-0 transition-transform duration-500"
               />
             </div>

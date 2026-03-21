@@ -21,28 +21,28 @@ export const COLORS = {
 export const SERVICES_SUMMARY = [
   {
     title: 'Brand Foundation',
-    description: 'We carve out a unique identity that resonates with your core audience.',
+    description: 'We build strong identities from the ground up. Our Graphic Designing team ensures that who you are is clearly defined visually.',
     icon: <PenTool className="w-8 h-8 text-teal-600" />,
     bgColor: 'bg-teal-50',
     borderColor: 'border-teal-200'
   },
   {
     title: 'Digital Experience',
-    description: 'High-performance websites designed for modern, fast-paced users.',
+    description: 'We take your brand online with state-of-the-art Website Design & Development. We create digital experiences that engage visitors and convert them into customers.',
     icon: <Monitor className="w-8 h-8 text-blue-600" />,
     bgColor: 'bg-blue-50',
     borderColor: 'border-blue-200'
   },
   {
     title: 'Marketing & Print',
-    description: 'Impactful physical and digital assets that turn heads and clicks.',
+    description: 'From brochures to social media assets, we craft tangible and digital materials that leave a lasting impression. Our Digital Marketing services help you reach the right audience.',
     icon: <Share2 className="w-8 h-8 text-rose-600" />,
     bgColor: 'bg-rose-50',
     borderColor: 'border-rose-200'
   },
   {
     title: 'The Plus',
-    description: 'Custom packaging and merchandise that completes the brand story.',
+    description: 'We go beyond the basics with specialized design services that make your products pop.',
     icon: <Gift className="w-8 h-8 text-indigo-600" />,
     bgColor: 'bg-indigo-50',
     borderColor: 'border-indigo-200'
@@ -51,14 +51,19 @@ export const SERVICES_SUMMARY = [
 
 export const PHILOSOPHY_ITEMS = [
   {
-    title: "The Creative Gap",
-    description: "Design is the bridge. We identify the missing links in your visual communication.",
+    title: "Design",
+    description: "Creating memorable marks and comprehensive identities that define your business.",
     icon: <Shapes className="w-10 h-10 text-teal-500" />
   },
   {
-    title: "The Tech Bridge",
-    description: "Development is the vessel. We build robust systems that carry your vision to the user.",
+    title: "Develop",
+    description: "Intuitive, user-centric layouts and functional code that take your brand online.",
     icon: <Cpu className="w-10 h-10 text-violet-500" />
+  },
+  {
+    title: "Deliver",
+    description: "Crafting tangible and digital materials that leave a lasting impression and drive results.",
+    icon: <Rocket className="w-10 h-10 text-rose-500" />
   }
 ];
 
