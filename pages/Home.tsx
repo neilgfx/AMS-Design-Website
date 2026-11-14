@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Zap, Target, MousePointer2, Monitor, Share2, CheckCircle2, ShoppingCart, BookOpen, Phone, Mail, PenTool, Gift } from 'lucide-react';
-import { SERVICES_SUMMARY, PHILOSOPHY_ITEMS } from '../constants';
+import { ArrowUpRight, Zap, Target, Monitor, Share2, CheckCircle2, ShoppingCart, BookOpen, Phone, Mail, PenTool, Gift, HelpCircle } from 'lucide-react';
+import { PHILOSOPHY_ITEMS } from '../constants';
+import SeoHead from '../components/SeoHead';
+import { MAIN_PAGES_SEO, HOME_FAQS } from '../seoData';
 
 const Home: React.FC = () => {
   return (
     <div className="pt-20">
+      <SeoHead
+        title={MAIN_PAGES_SEO.home.title}
+        description={MAIN_PAGES_SEO.home.description}
+        keywords={MAIN_PAGES_SEO.home.keywords}
+        path="/"
+        faqs={HOME_FAQS}
+        includeCatalog
+      />
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden px-4">
         <div className="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-teal-100 rounded-full blur-[120px] opacity-60 animate-pulse" />
@@ -119,14 +129,22 @@ const Home: React.FC = () => {
               <h3 className="text-3xl font-black text-slate-900 mb-4">1. Brand Foundation (Graphic Designing)</h3>
               <p className="text-slate-500 text-lg leading-relaxed mb-6">We build strong identities from the ground up. Our Graphic Designing team ensures that who you are is clearly defined visually.</p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                {['Logo Design', 'Brand Identity & Style Guides', 'Business Card Design', 'Stationery Design', 'Icon Design'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> {item}
+                {[
+                  { label: 'Logo Design', to: '/logo-design' },
+                  { label: 'Brand Identity & Style Guides', to: '/logo-design' },
+                  { label: 'Business / Visiting Card Design', to: '/visiting-card-design' },
+                  { label: 'Stationery Design', to: '/visiting-card-design' },
+                  { label: 'Icon & Graphic Design', to: '/graphic-design' },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link to={item.to} className="flex items-center gap-2 text-slate-600 hover:text-teal-600 font-medium transition-colors">
+                      <div className="w-1.5 h-1.5 bg-teal-500 rounded-full shrink-0" /> {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
-              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-teal-600 hover:underline">
-                Learn More <ArrowUpRight className="w-4 h-4" />
+              <Link to="/graphic-design" className="mt-auto inline-flex items-center gap-2 font-bold text-teal-600 hover:underline">
+                Explore Graphic & Logo Design <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -138,14 +156,23 @@ const Home: React.FC = () => {
               <h3 className="text-3xl font-black text-slate-900 mb-4">2. Digital Experience</h3>
               <p className="text-slate-500 text-lg leading-relaxed mb-6">We take your brand online with state-of-the-art Website Design & Development. We create digital experiences that engage visitors and convert them into customers.</p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                {['Website and UI/UX Design', 'Web Banner Design', 'Thumbnails', 'Online Graphic Creation', 'HTML Conversion', 'Digital Marketing'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" /> {item}
+                {[
+                  { label: 'Website and UI/UX Design', to: '/website-design' },
+                  { label: 'Web Banner Design', to: '/website-design' },
+                  { label: 'Thumbnails', to: '/thumbnail-design' },
+                  { label: 'Online Graphic Creation', to: '/graphic-design' },
+                  { label: 'HTML Conversion', to: '/website-design' },
+                  { label: 'Digital Marketing', to: '/digital-marketing' },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link to={item.to} className="flex items-center gap-2 text-slate-600 hover:text-blue-600 font-medium transition-colors">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full shrink-0" /> {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
-              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-blue-600 hover:underline">
-                Learn More <ArrowUpRight className="w-4 h-4" />
+              <Link to="/website-design" className="mt-auto inline-flex items-center gap-2 font-bold text-blue-600 hover:underline">
+                Explore Website Design <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -157,14 +184,22 @@ const Home: React.FC = () => {
               <h3 className="text-3xl font-black text-slate-900 mb-4">3. Marketing & Print (Digital Marketing)</h3>
               <p className="text-slate-500 text-lg leading-relaxed mb-6">From brochures to social media assets, we craft tangible and digital materials that leave a lasting impression. Our Digital Marketing services help you reach the right audience.</p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                {['Brochure and Flyer Design', 'Advertisement Creative Design', 'Social Media Graphics', 'Presentation Design', 'Posters, Menus, Signage & Banners'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
-                    <div className="w-1.5 h-1.5 bg-rose-500 rounded-full" /> {item}
+                {[
+                  { label: 'Brochure and Flyer Design', to: '/brochure-design' },
+                  { label: 'Advertisement Creative Design', to: '/digital-marketing' },
+                  { label: 'Social Media Graphics', to: '/digital-marketing' },
+                  { label: 'Presentation Design', to: '/brochure-design' },
+                  { label: 'Posters, Menus, Signage & Banners', to: '/poster-design' },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link to={item.to} className="flex items-center gap-2 text-slate-600 hover:text-rose-600 font-medium transition-colors">
+                      <div className="w-1.5 h-1.5 bg-rose-500 rounded-full shrink-0" /> {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
-              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-rose-600 hover:underline">
-                Learn More <ArrowUpRight className="w-4 h-4" />
+              <Link to="/digital-marketing" className="mt-auto inline-flex items-center gap-2 font-bold text-rose-600 hover:underline">
+                Explore Digital Marketing <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -176,14 +211,21 @@ const Home: React.FC = () => {
               <h3 className="text-3xl font-black text-slate-900 mb-4">4. The Plus (Specialized Services)</h3>
               <p className="text-slate-500 text-lg leading-relaxed mb-6">We go beyond the basics with specialized design services that make your products pop.</p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                {['Packaging and Merchandise Design', 'Cap & T-Shirt Designing and Printing', 'Book Cover Design', 'Label Design'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium">
-                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full" /> {item}
+                {[
+                  { label: 'Packaging and Merchandise Design', to: '/packaging-design' },
+                  { label: 'Cap & T-Shirt Designing and Printing', to: '/packaging-design' },
+                  { label: 'Book Cover Design', to: '/book-design' },
+                  { label: 'Label Design', to: '/packaging-design' },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link to={item.to} className="flex items-center gap-2 text-slate-600 hover:text-indigo-600 font-medium transition-colors">
+                      <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full shrink-0" /> {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
-              <Link to="/services" className="mt-auto inline-flex items-center gap-2 font-bold text-indigo-600 hover:underline">
-                Learn More <ArrowUpRight className="w-4 h-4" />
+              <Link to="/packaging-design" className="mt-auto inline-flex items-center gap-2 font-bold text-indigo-600 hover:underline">
+                Explore Packaging & Book Design <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -276,6 +318,29 @@ const Home: React.FC = () => {
             <div className="w-full lg:w-1/3 aspect-video bg-white/20 rounded-3xl backdrop-blur-md flex items-center justify-center">
               <BookOpen className="w-24 h-24 opacity-40" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions Section (SEO & AI Overview) */}
+      <section className="py-24 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 px-4 py-2 rounded-full text-teal-700 text-sm font-bold mb-4">
+              <HelpCircle className="w-4 h-4" /> Quick Answers
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-slate-500 font-medium">
+              Everything you need to know about our Website Design, Graphic Design, and Digital Marketing services.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {HOME_FAQS.map((faq, idx) => (
+              <div key={idx} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-100">
+                <h3 className="text-xl font-black text-slate-900 mb-3">{faq.question}</h3>
+                <p className="text-slate-600 font-medium leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

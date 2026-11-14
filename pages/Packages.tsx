@@ -1,11 +1,42 @@
 
 import React from 'react';
-import { Check, Star, Zap, Shield, HelpCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Star, Zap, Shield, HelpCircle, ArrowUpRight } from 'lucide-react';
 import { A_LA_CARTE_ITEMS } from '../constants';
+import SeoHead from '../components/SeoHead';
+import { MAIN_PAGES_SEO, HOME_FAQS } from '../seoData';
+
+const A_LA_CARTE_ROUTE_MAP: Record<string, string> = {
+  'Social Media Poster': '/poster-design',
+  'Business Cards': '/visiting-card-design',
+  'Letter Head': '/visiting-card-design',
+  'Brochure A4': '/brochure-design',
+  'Company Profile': '/brochure-design',
+  'Magazine': '/book-design',
+  'Coupons': '/digital-marketing',
+  'Cover Page': '/book-design',
+  'Website Banner': '/website-design',
+  'Product Packaging': '/packaging-design',
+  'Catalogue': '/brochure-design',
+  'Menu Card': '/packaging-design',
+};
 
 const Packages: React.FC = () => {
   return (
     <div className="pt-32 pb-24">
+      <SeoHead
+        title={MAIN_PAGES_SEO.packages.title}
+        description={MAIN_PAGES_SEO.packages.description}
+        keywords={MAIN_PAGES_SEO.packages.keywords}
+        path="/packages"
+        breadcrumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Packages', path: '/packages' },
+        ]}
+        faqs={HOME_FAQS}
+        includeCatalog
+      />
+
       {/* Editorial Header */}
       <section className="max-w-7xl mx-auto px-4 text-center mb-24">
         <h1 className="text-6xl lg:text-8xl font-black text-slate-900 tracking-tighter mb-6">Investment.</h1>
@@ -26,7 +57,9 @@ const Packages: React.FC = () => {
           <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
              <div className="max-w-xl">
                 <span className="text-teal-600 font-black text-sm uppercase tracking-[0.2em] mb-4 block">Identity Kits</span>
-                <h2 className="text-5xl font-black text-slate-900">Logo Design</h2>
+                <h2 className="text-5xl font-black text-slate-900">
+                  <Link to="/logo-design" className="hover:text-teal-600 transition-colors">Logo Design</Link>
+                </h2>
              </div>
              <p className="text-slate-500 font-medium max-w-xs text-right hidden lg:block">Prices reflect the depth of research and refinement in our process.</p>
           </div>
@@ -43,7 +76,7 @@ const Packages: React.FC = () => {
                 <li className="flex items-center gap-4 text-slate-600 font-bold"><div className="w-2 h-2 rounded-full bg-teal-500" /> Print-ready Vectors</li>
                 <li className="flex items-center gap-4 text-slate-600 font-bold"><div className="w-2 h-2 rounded-full bg-teal-500" /> 3 Detailed Revisions</li>
               </ul>
-              <button className="w-full py-5 bg-teal-500 text-white font-black rounded-2xl hover:bg-teal-600 transition-colors shadow-lg">Select Starter</button>
+              <Link to="/contact" className="block text-center w-full py-5 bg-teal-500 text-white font-black rounded-2xl hover:bg-teal-600 transition-colors shadow-lg">Select Starter</Link>
             </div>
             
             <div className="bg-slate-900 p-10 rounded-[2.5rem] card-shadow border-[6px] border-slate-900 text-white relative overflow-hidden group hover:translate-x-[-8px] hover:translate-y-[-8px] transition-all">
@@ -59,7 +92,7 @@ const Packages: React.FC = () => {
                 <li className="flex items-center gap-4 text-slate-300 font-bold"><Star className="w-5 h-5 text-yellow-400 fill-yellow-400" /> Unlimited Refinements</li>
                 <li className="flex items-center gap-4 text-slate-300 font-bold"><Star className="w-5 h-5 text-yellow-400 fill-yellow-400" /> Full Social Media Pack</li>
               </ul>
-              <button className="w-full py-5 bg-gradient-main text-white font-black rounded-2xl hover:opacity-90 transition-opacity shadow-xl">Start Pro Identity</button>
+              <Link to="/contact" className="block text-center w-full py-5 bg-gradient-main text-white font-black rounded-2xl hover:opacity-90 transition-opacity shadow-xl">Start Pro Identity</Link>
             </div>
           </div>
         </section>
@@ -68,20 +101,22 @@ const Packages: React.FC = () => {
         <section>
           <div className="mb-16">
             <span className="text-rose-600 font-black text-sm uppercase tracking-[0.2em] mb-4 block">Web Systems</span>
-            <h2 className="text-5xl font-black text-slate-900">Website Design</h2>
+            <h2 className="text-5xl font-black text-slate-900">
+              <Link to="/website-design" className="hover:text-rose-600 transition-colors">Website Design</Link>
+            </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white border-2 border-slate-100 p-8 rounded-[2rem] hover:border-teal-500 transition-colors">
+            <Link to="/website-design" className="block bg-white border-2 border-slate-100 p-8 rounded-[2rem] hover:border-teal-500 transition-colors">
               <p className="text-teal-600 font-black mb-1">Templated</p>
               <h3 className="text-2xl font-black text-slate-900 mb-6">Template Design</h3>
               <p className="text-4xl font-black text-slate-900 mb-2">₹3,000</p>
               <p className="text-slate-400 font-bold text-sm mb-8">($35)</p>
               <div className="w-full h-[1px] bg-slate-100 mb-8" />
               <p className="text-slate-500 text-sm font-medium">Perfect for quick landing pages or static portfolios.</p>
-            </div>
+            </Link>
             
-            <div className="bg-white border-4 border-rose-500 p-8 rounded-[2rem] shadow-xl relative scale-105">
+            <Link to="/website-design" className="block bg-white border-4 border-rose-500 p-8 rounded-[2rem] shadow-xl relative md:scale-105">
                <div className="absolute top-0 right-10 -translate-y-1/2 bg-rose-500 text-white px-4 py-1 rounded-lg text-[10px] font-black uppercase">Standard</div>
               <p className="text-rose-600 font-black mb-1">Professional</p>
               <h3 className="text-2xl font-black text-slate-900 mb-6">Standard Website</h3>
@@ -89,16 +124,16 @@ const Packages: React.FC = () => {
               <p className="text-slate-400 font-bold text-sm mb-8">($182 - $250)</p>
               <div className="w-full h-[1px] bg-slate-100 mb-8" />
               <p className="text-slate-500 text-sm font-medium">Custom multi-page solutions with full SEO and CMS support.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white border-2 border-slate-100 p-8 rounded-[2rem] hover:border-violet-500 transition-colors">
+            <Link to="/website-design" className="block bg-white border-2 border-slate-100 p-8 rounded-[2rem] hover:border-violet-500 transition-colors">
               <p className="text-violet-600 font-black mb-1">Enterprise</p>
               <h3 className="text-2xl font-black text-slate-900 mb-6">E-Commerce</h3>
               <p className="text-4xl font-black text-slate-900 mb-2">₹45,000</p>
               <p className="text-slate-400 font-bold text-sm mb-8">($550)</p>
               <div className="w-full h-[1px] bg-slate-100 mb-8" />
               <p className="text-slate-500 text-sm font-medium">Full-scale online stores with inventory and payment integration.</p>
-            </div>
+            </Link>
           </div>
         </section>
 
@@ -106,22 +141,32 @@ const Packages: React.FC = () => {
         <section className="bg-white p-12 lg:p-20 rounded-[4rem] shadow-sm border border-slate-100">
            <div className="mb-16 flex justify-between items-center flex-wrap gap-4">
               <h2 className="text-4xl font-black text-slate-900">A La Carte Services</h2>
-              <div className="flex gap-2 text-slate-400">
+              <Link to="/contact" className="flex items-center gap-2 text-slate-400 hover:text-teal-600 transition-colors">
                  <HelpCircle className="w-5 h-5" />
                  <span className="text-sm font-bold">Custom quotes available</span>
-              </div>
+              </Link>
            </div>
            
            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-4">
-              {A_LA_CARTE_ITEMS.map((item, idx) => (
-                <div key={idx} className="flex justify-between items-center py-4 border-b border-slate-50 group">
-                   <span className="text-lg font-bold text-slate-700 group-hover:text-teal-600 transition-colors">{item.item}</span>
-                   <div className="flex items-center gap-4">
-                      <div className="h-[1px] bg-slate-100 flex-grow w-12 hidden sm:block" />
-                      <span className="font-black text-slate-900 min-w-[80px] text-right">₹{item.priceINR}</span>
-                   </div>
-                </div>
-              ))}
+              {A_LA_CARTE_ITEMS.map((item, idx) => {
+                const targetPath = A_LA_CARTE_ROUTE_MAP[item.item] || '/graphic-design';
+                return (
+                  <Link
+                    key={idx}
+                    to={targetPath}
+                    className="flex justify-between items-center py-4 border-b border-slate-50 group"
+                  >
+                     <span className="text-lg font-bold text-slate-700 group-hover:text-teal-600 transition-colors flex items-center gap-2">
+                       {item.item}
+                       <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                     </span>
+                     <div className="flex items-center gap-4">
+                        <div className="h-[1px] bg-slate-100 flex-grow w-12 hidden sm:block" />
+                        <span className="font-black text-slate-900 min-w-[80px] text-right">₹{item.priceINR}</span>
+                     </div>
+                  </Link>
+                );
+              })}
            </div>
         </section>
 

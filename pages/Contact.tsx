@@ -1,6 +1,7 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MessageSquare, ShoppingCart, ExternalLink, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import SeoHead from '../components/SeoHead';
+import { MAIN_PAGES_SEO } from '../seoData';
 
 const Contact: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -38,6 +39,16 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-[80vh] animate-in zoom-in duration-500">
+      <SeoHead
+        title={MAIN_PAGES_SEO.contact.title}
+        description={MAIN_PAGES_SEO.contact.description}
+        keywords={MAIN_PAGES_SEO.contact.keywords}
+        path="/contact"
+        breadcrumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Contact', path: '/contact' },
+        ]}
+      />
       <div className="flex flex-col lg:flex-row h-full">
         {/* Info Side */}
         <div className="lg:w-1/2 bg-gradient-main p-12 lg:p-24 flex flex-col justify-center text-white relative overflow-hidden">

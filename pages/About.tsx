@@ -1,6 +1,9 @@
 
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Check, ArrowUpRight } from 'lucide-react';
+import SeoHead from '../components/SeoHead';
+import { MAIN_PAGES_SEO } from '../seoData';
 
 const About: React.FC = () => {
   const whyUs = [
@@ -14,7 +17,17 @@ const About: React.FC = () => {
 
   return (
     <div className="animate-in slide-in-from-bottom duration-700">
-      <section className="bg-gradient-soft py-20">
+      <SeoHead
+        title={MAIN_PAGES_SEO.about.title}
+        description={MAIN_PAGES_SEO.about.description}
+        keywords={MAIN_PAGES_SEO.about.keywords}
+        path="/about"
+        breadcrumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'About', path: '/about' },
+        ]}
+      />
+      <section className="bg-gradient-soft py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-black text-gradient mb-6">Who We Are</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
@@ -65,6 +78,14 @@ const About: React.FC = () => {
                 <span className="font-semibold text-gray-700">{item}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
+            <Link to="/services" className="px-8 py-4 bg-slate-900 text-white font-black rounded-2xl hover:bg-slate-800 transition-colors inline-flex items-center gap-2">
+              Explore Our Services <ArrowUpRight className="w-5 h-5" />
+            </Link>
+            <Link to="/contact" className="px-8 py-4 bg-white text-slate-900 border border-slate-200 font-black rounded-2xl hover:border-teal-500 transition-colors">
+              Get a Quote
+            </Link>
           </div>
         </div>
       </section>

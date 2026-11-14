@@ -1,0 +1,9 @@
+{
+  "name": "Abridge Media Services",
+  "short_name": "Abridge Media",
+  "description": "Website Design, Digital Marketing & Graphic Design Agency",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0d9488"
+}

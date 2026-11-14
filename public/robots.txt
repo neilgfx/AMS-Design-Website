@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/sitemap.xml
