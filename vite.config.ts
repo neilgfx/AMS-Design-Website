@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'path';
 import { defineConfig, loadEnv, Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
-import { MAIN_PAGES_SEO, SERVICE_PAGES, HOME_FAQS, SITE_CONFIG, FaqItem } from './seoData';
+import { MAIN_PAGES_SEO, SERVICE_PAGES, HOME_FAQS, SITE_CONFIG, PORTFOLIO_CASE_STUDIES, FaqItem } from './seoData';
 
 function escapeHtml(value: string): string {
   return value
@@ -103,7 +103,33 @@ function seoPrerenderPlugin(): Plugin {
             url: baseUrl,
             email: SITE_CONFIG.email,
             telephone: SITE_CONFIG.phone,
-            areaServed: 'Worldwide',
+            address: {
+              '@type': 'PostalAddress',
+              ...SITE_CONFIG.address,
+            },
+            areaServed: ['India', 'Worldwide'],
+            openingHours: SITE_CONFIG.openingHours,
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: SITE_CONFIG.aggregateRating.ratingValue,
+              reviewCount: SITE_CONFIG.aggregateRating.reviewCount,
+            },
+            knowsAbout: [
+              'Website Design and Development',
+              'Graphic Design',
+              'Digital Marketing',
+              'Logo Design',
+              'Product Packaging Design',
+              'Brochure and Visiting Card Design',
+              'Book Cover Design',
+              'YouTube Thumbnail Design',
+            ],
+            sameAs: [
+              SITE_CONFIG.gmbUrl,
+              SITE_CONFIG.instagramUrl,
+              SITE_CONFIG.storeUrl,
+              SITE_CONFIG.blogUrl,
+            ],
           },
           {
             '@type': 'WebSite',
@@ -147,6 +173,24 @@ function seoPrerenderPlugin(): Plugin {
                   },
                 }
               : {}),
+          });
+        }
+
+        if (route.path === '/work') {
+          graph.push({
+            '@type': 'CollectionPage',
+            name: 'Website Design & Development Case Studies – Abridge Media Services',
+            url: canonicalUrl,
+            creator: { '@id': orgId },
+            mainEntity: {
+              '@type': 'ItemList',
+              itemListElement: PORTFOLIO_CASE_STUDIES.map((study) => ({
+                '@type': 'ListItem',
+                position: study.position,
+                name: study.schemaName,
+                url: study.websiteUrl,
+              })),
+            },
           });
         }
 

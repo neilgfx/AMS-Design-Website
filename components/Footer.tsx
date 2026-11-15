@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-600">
                 <Mail className="w-5 h-5 text-rose-500" />
-                <a href="mailto:004neil@gmail.com" className="hover:text-rose-500 transition-colors">004neil@gmail.com</a>
+                <a href="mailto:hello@amsdesign.in" className="hover:text-rose-500 transition-colors">hello@amsdesign.in</a>
               </li>
             </ul>
             <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-gray-500">

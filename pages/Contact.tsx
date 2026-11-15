@@ -79,13 +79,13 @@ const Contact: React.FC = () => {
               </div>
             </a>
             
-            <a href="mailto:004neil@gmail.com" className="flex items-center gap-6 group">
+            <a href="mailto:hello@amsdesign.in" className="flex items-center gap-6 group">
               <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-md group-hover:bg-white/30 transition-all">
                 <Mail className="w-8 h-8" />
               </div>
               <div>
                 <p className="text-sm font-bold uppercase tracking-widest opacity-60">Email</p>
-                <p className="text-2xl font-black">004neil@gmail.com</p>
+                <p className="text-2xl font-black">hello@amsdesign.in</p>
               </div>
             </a>
           </div>

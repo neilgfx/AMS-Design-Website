@@ -16,4 +16,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/sitemap.xml
+Sitemap: https://amsdesign.in/sitemap.xml

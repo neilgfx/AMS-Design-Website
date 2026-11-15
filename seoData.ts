@@ -40,14 +40,28 @@ export interface ServicePageData {
 export const SITE_CONFIG = {
   name: 'Abridge Media Services',
   tagline: 'Design - Develop - Deliver',
-  baseUrl: 'https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app',
+  baseUrl: 'https://amsdesign.in',
   phone: '+919881103444',
   phoneDisplay: '+91 9881103444',
   whatsappUrl: 'https://wa.me/919881103444',
-  email: '004neil@gmail.com',
-  location: 'Serving Clients Globally',
+  email: 'hello@amsdesign.in',
+  location: 'Nagpur, Maharashtra, India (Serving Clients Globally)',
+  address: {
+    streetAddress: 'Plot no. C, 2, Laxminagar',
+    addressLocality: 'Nagpur',
+    addressRegion: 'Maharashtra',
+    postalCode: '440022',
+    addressCountry: 'IN',
+  },
+  openingHours: 'Mo-Su 09:00-20:00',
+  aggregateRating: {
+    ratingValue: '4.8',
+    reviewCount: '11',
+  },
   logo: 'https://scontent-bom5-2.xx.fbcdn.net/v/t39.30808-6/626778663_122102633553247608_6348987989825248532_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nEkDCMHhGfMQ7kNvwFRnWeq&_nc_oc=AdlbetXYtWnY3XMqnyPFuLO6nCJ2LK1JfHIJEML9VkD8FuGwYuhH-1TSaIGyzq3fPxI&_nc_zt=23&_nc_ht=scontent-bom5-2.xx&_nc_gid=ffd4-Rt2poYsEMVgYtv74Q&oh=00_AfsbfeFxd0dLleA_Q3wbFWn8d1HYLbfUKs2Urz8-pQsqUw&oe=698E1B91',
   ogImage: 'https://lh3.googleusercontent.com/d/1X6lY_p4EaxqowVueH6KwVuWGzI5Flbel',
+  gmbUrl: 'https://google.com',
+  instagramUrl: 'https://www.instagram.com/abridgemsdesign/',
   storeUrl: 'https://payhip.com/Creativelyink',
   blogUrl: 'https://creativelyink.blogspot.com/',
 };
@@ -87,11 +101,11 @@ export const MAIN_PAGES_SEO = {
   },
   work: {
     path: '/work',
-    title: 'Portfolio & Design Work Samples | Abridge Media Services',
+    title: 'Website Design & Development Case Studies & Portfolio | Abridge Media Services',
     description:
-      'Explore Abridge Media Services portfolio featuring custom logo design, poster design, brochure layouts, website UI/UX, book covers, and brand identity work.',
+      'Explore 10 live website design & development case studies by Abridge Media Services across healthcare, automotive, hospitality, F&B, manufacturing, education, finance, and real estate.',
     keywords:
-      'graphic design portfolio, logo design samples, poster design showcase, brochure design portfolio, website design work, Abridge Media Services work',
+      'website design case studies, web development portfolio India, graphic design portfolio, healthcare website design, ecommerce web portal, Abridge Media Services work',
     h1: 'Our Portfolio.',
   },
   about: {
@@ -125,7 +139,7 @@ export const MAIN_PAGES_SEO = {
     path: '/contact',
     title: 'Contact Us & Request a Quote | Abridge Media Services',
     description:
-      'Start your website, branding, graphic design, or digital marketing project with Abridge Media Services. Call or WhatsApp +91 9881103444 or email 004neil@gmail.com.',
+      'Start your website, branding, graphic design, or digital marketing project with Abridge Media Services. Call or WhatsApp +91 9881103444 or email hello@amsdesign.in.',
     keywords:
       'contact Abridge Media Services, hire website designer, hire graphic designer, request design quote, +91 9881103444',
     h1: 'Get In Touch',
@@ -136,20 +150,20 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/website-design',
     shortName: 'Website Design',
-    title: 'Website Design & Development Services | Abridge Media Services',
+    title: 'Custom Website Design & Development Services in India | Abridge Media Services',
     description:
-      'Custom responsive Website Design, UI/UX, Business Websites (₹16,000+), E-commerce Stores (₹45,000) & HTML Conversion built for speed and Google SEO.',
+      'Abridge Media Services builds fast, mobile-responsive, and conversion-focused websites for startups, small businesses, and established brands across India and globally.',
     keywords:
-      'website design, website development, UI UX design, business website design, ecommerce website development, HTML conversion, web banner design, SEO friendly website',
+      'website design, website development, custom website design India, UI UX design, business website design, ecommerce website development, mobile-first website, SEO friendly website',
     category: 'Digital Experience',
-    h1: 'Website Design & Development Services',
-    subtitle: 'Fast, responsive, SEO-ready websites engineered to convert visitors into customers.',
+    h1: 'Custom Website Design & Development Services in India',
+    subtitle: 'Abridge Media Services builds fast, mobile-responsive, and conversion-focused websites for startups, small businesses, and established brands across India and globally. From clean business portfolios to full-featured e-commerce stores, every site is engineered for speed, user experience, and search engine visibility.',
     aiSummary:
-      'Abridge Media Services designs and develops custom, mobile-responsive, SEO-friendly websites for startups and growing businesses worldwide. Offerings include Template Websites starting at ₹3,000 ($35), 5–7 page Standard Business Websites from ₹16,000 ($182), full E-Commerce Stores with payment gateways from ₹45,000 ($550), UI/UX layouts, and clean HTML conversion.',
+      'Abridge Media Services builds fast, mobile-responsive, and conversion-focused websites for startups, small businesses, and established brands across India and globally. From clean business portfolios to full-featured e-commerce stores, every site is engineered for speed, user experience, and search engine visibility. Packages include Template Websites from ₹3,000 ($35), Standard 5–7 page Business Websites from ₹16,000 ($182), and complete E-Commerce stores from ₹45,000 ($550).',
     startingPriceINR: '₹3,000 – ₹45,000',
     startingPriceUSD: '$35 – $550',
     priceNote: 'Template landing pages from ₹3,000; 5–7 page business sites from ₹16,000; E-commerce from ₹45,000.',
-    turnaround: '5–14 Business Days',
+    turnaround: '7–14 Working Days',
     revisions: 'Up to 3 design revisions included',
     deliverables: [
       { title: 'Website & UI/UX Design', detail: 'User-centric, mobile-first layouts tailored to your brand identity and customer journey.' },
@@ -165,16 +179,19 @@ export const SERVICE_PAGES: ServicePageData[] = [
     ],
     faqs: [
       {
-        question: 'How much does website design cost at Abridge Media Services?',
-        answer: 'Template websites start at ₹3,000 ($35), custom 5–7 page Standard Websites range from ₹16,000 to ₹22,000 ($182–$250), and complete E-commerce websites start at ₹45,000 ($550).',
+        question: 'What does a professional website design package include?',
+        answer:
+          'A professional website design package from Abridge Media Services includes custom UI/UX layout design, mobile and tablet responsiveness, on-page SEO setup, contact form integration, SSL security configuration, and speed optimization. Every website is built to load quickly and convert visitors into leads across all devices.',
       },
       {
-        question: 'Are your websites mobile-friendly and Google SEO ready?',
-        answer: 'Yes. Every website is built mobile-first with clean semantic HTML, fast loading performance, proper heading structure, meta tags, and Schema markup for search engines.',
+        question: 'How long does it take to design and launch a business website?',
+        answer:
+          'A standard 5-to-10-page business website typically takes 7 to 14 working days from initial wireframe approval to final launch. Larger custom websites or full e-commerce platforms with payment gateway integration usually take 3 to 5 weeks, depending on content readiness and feature requirements.',
       },
       {
-        question: 'How long does it take to build a business website?',
-        answer: 'Template landing pages typically take 3–5 business days, while custom 5–7 page business websites and e-commerce builds take 7–14 business days once content and images are provided.',
+        question: 'Why is mobile-first website design important for Indian businesses?',
+        answer:
+          'Over 80% of internet users in India browse and shop primarily on smartphones. A mobile-first website ensures fast loading on mobile networks, easy thumb-friendly navigation, and higher rankings on Google, which uses mobile-first indexing to evaluate and rank all websites.',
       },
     ],
     relatedSlugs: ['/graphic-design', '/digital-marketing', '/logo-design', '/thumbnail-design'],
@@ -230,45 +247,48 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/digital-marketing',
     shortName: 'Digital Marketing',
-    title: 'Digital Marketing & Ad Creative Services | Abridge Media Services',
+    title: 'Result-Driven Digital Marketing & Performance Ad Services | Abridge Media Services',
     description:
-      'Strategic Digital Marketing creatives, social media graphics, high-converting ad designs, presentations, and online campaign visuals to grow your brand.',
+      'Abridge Media Services helps businesses grow online visibility, generate qualified leads, and maximize return on ad spend via Google Ads, Meta Ads, and SEO.',
     keywords:
-      'digital marketing, social media marketing graphics, ad creative design, online graphic creation, social media poster design, campaign creatives, presentation design',
+      'digital marketing, performance ad services, Google Ads India, Meta Ads, social media marketing, SEO, AEO, lead generation, ad creative design',
     category: 'Marketing & Print',
-    h1: 'Digital Marketing & Creative Campaigns',
-    subtitle: 'Scroll-stopping ad creatives, social media visuals, and campaign assets built for engagement.',
+    h1: 'Result-Driven Digital Marketing & Performance Ad Services',
+    subtitle: 'Abridge Media Services helps businesses grow online visibility, generate qualified leads, and maximize return on ad spend. We manage targeted Google Ads, social media campaigns, and search engine optimization tailored to your target audience across India and international markets.',
     aiSummary:
-      'Abridge Media Services helps businesses grow online with strategic digital marketing design and campaign creatives starting at ₹400 ($5). We craft high-converting social media posts, performance ad creatives, website banners, high-CTR video thumbnails, coupons, and investor/sales presentation decks tailored to maximize audience reach and clicks.',
+      'Abridge Media Services helps businesses grow online visibility, generate qualified leads, and maximize return on ad spend. We manage targeted Google Ads, social media campaigns, and search engine optimization tailored to your target audience across India and international markets—paired with conversion-focused creatives starting at ₹400 ($5).',
     startingPriceINR: '₹400',
     startingPriceUSD: '$5',
-    priceNote: 'Social media posters from ₹400; website banners & promotional coupons from ₹500.',
+    priceNote: 'Social media & ad creatives from ₹400; full monthly Google/Meta Ads & SEO retainers available.',
     turnaround: '1–3 Business Days',
     revisions: 'Up to 3 design revisions included',
     deliverables: [
-      { title: 'Social Media Graphics', detail: 'Platform-sized posts, carousels, and stories for Instagram, LinkedIn, Facebook, and X.' },
-      { title: 'Advertisement Creative Design', detail: 'Conversion-focused static ad creatives crafted for Meta Ads, Google Display, and campaigns.' },
-      { title: 'Promotional Banners & Coupons', detail: 'Website hero banners, seasonal sale creatives, and trackable digital discount coupons.' },
-      { title: 'Presentation Decks', detail: 'Persuasive sales decks and company profiles that communicate your value clearly.' },
+      { title: 'Google Search & Display Ads', detail: 'Targeted search and remarketing campaigns structured for lower Cost Per Lead (CPL).' },
+      { title: 'Meta (Facebook & Instagram) Campaigns', detail: 'Scroll-stopping static and carousel ad creatives built for mobile feeds and direct leads.' },
+      { title: 'On-Page SEO & Answer Engine Optimization', detail: 'Technical metadata, schema markup, and search optimization for long-term organic traffic.' },
+      { title: 'Conversion & Analytics Tracking', detail: 'Google Tag Manager and Google Analytics setup tracking calls, forms, and ROAS.' },
     ],
     idealFor: ['Brands running Meta & Google Ads', 'Businesses growing social channels', 'Coaches, creators & SaaS teams', 'E-commerce seasonal campaigns'],
     processSteps: [
       { step: '01', title: 'Audience & Offer Alignment', detail: 'We clarify your campaign goal, target audience, and primary call-to-action.' },
-      { step: '02', title: 'High-Impact Visual Design', detail: 'Bold typography, visual hierarchy, and brand consistency built for mobile feeds.' },
-      { step: '03', title: 'Multi-Format Delivery', detail: 'Exported in crisp square, vertical, and landscape sizes ready for immediate publishing.' },
+      { step: '02', title: 'Campaign & Creative Execution', detail: 'Targeted ad setup paired with bold visual hierarchy for maximum click-through.' },
+      { step: '03', title: 'Tracking & Optimization', detail: 'Measure CPL, ROAS, phone inquiries, and form submissions to scale winning channels.' },
     ],
     faqs: [
       {
-        question: 'How do your digital marketing creatives improve campaign results?',
-        answer: 'We design with clear visual hierarchy, strong contrast, and focused calls-to-action so your ads and social posts capture attention quickly and improve click-through rates.',
+        question: 'Which digital marketing channels generate the fastest leads for businesses?',
+        answer:
+          'Google Search Ads and Meta (Facebook and Instagram) Ads generate the fastest leads because they target buyers actively searching for your services or matching your ideal customer profile. Combining paid ads with ongoing SEO and AEO builds steady, long-term organic traffic alongside immediate lead flow.',
       },
       {
-        question: 'Can I order a monthly bundle of social media posters and ad creatives?',
-        answer: 'Yes. You can order individual creatives starting at ₹400 or request a custom monthly package via our Contact page.',
+        question: 'How do you measure the success of a digital marketing campaign?',
+        answer:
+          'Campaign success is tracked using conversion metrics rather than vanity clicks, including Cost Per Lead (CPL), Return on Ad Spend (ROAS), phone inquiries, and form submissions. We set up Google Tag Manager and Google Analytics conversion tracking so every rupee spent is accountable.',
       },
       {
-        question: 'Do you also design website banners and thumbnails for campaigns?',
-        answer: 'Yes, we design coordinated website banners (₹500) and video thumbnails so your entire funnel shares one cohesive look.',
+        question: 'Should a small business invest in SEO or paid ads first?',
+        answer:
+          'Small businesses needing immediate inquiries should start with targeted Google or Meta Ads to generate leads within days while simultaneously building SEO foundations for sustainable organic growth. Over 6 to 12 months, strong SEO and AEO reduce your overall customer acquisition cost.',
       },
     ],
     relatedSlugs: ['/poster-design', '/thumbnail-design', '/website-design', '/brochure-design'],
@@ -277,41 +297,43 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/logo-design',
     shortName: 'Logo Design',
-    title: 'Logo Design & Brand Identity Packages | Abridge Media Services',
+    title: 'Custom Logo Design & Brand Identity Services | Abridge Media Services',
     description:
-      'Memorable Logo Design & Brand Style Guides. Starter kit ₹3,000 ($50) with 2 concepts, or Best Buy ₹5,000 ($75) with 5 concepts, style guide & social kit.',
+      'Abridge Media Services crafts memorable, scalable, and original logos tailored to your brand personality and target market. Packages from ₹3,000 ($50).',
     keywords:
-      'logo design, custom logo designer, brand identity design, brand style guide, startup logo package, business logo design India, vector logo',
+      'logo design, custom logo design, brand identity services, brand style guide, vector logo, startup logo package, business logo design India',
     category: 'Brand Foundation',
-    h1: 'Logo Design & Brand Identity',
-    subtitle: 'Distinctive, timeless marks and complete brand style guides that make your business unforgettable.',
+    h1: 'Custom Logo Design & Brand Identity Services',
+    subtitle: 'Abridge Media Services crafts memorable, scalable, and original logos tailored to your brand personality and target market. We design versatile brand marks that look sharp across websites, social media profiles, packaging, and large-format signage.',
     aiSummary:
-      'Abridge Media Services creates custom vector logos and full brand identity kits. Choose the Starter Logo Package at ₹3,000 ($50) with 2 concepts, print-ready vectors, and 3 revisions, or the Best Buy Package at ₹5,000 ($75) featuring 5 premium concepts, a complete Brand Style Guide, unlimited refinements, and a Social Media Pack.',
+      'Abridge Media Services crafts memorable, scalable, and original logos tailored to your brand personality and target market. We design versatile brand marks that look sharp across websites, social media profiles, packaging, and large-format signage. Choose the Starter Logo Package at ₹3,000 ($50) or the Best Buy Identity Kit at ₹5,000 ($75).',
     startingPriceINR: '₹3,000',
     startingPriceUSD: '$50',
     priceNote: 'Starter Logo Package: ₹3,000 ($50) | Best Buy Pro Identity: ₹5,000 ($75).',
-    turnaround: '3–6 Business Days',
-    revisions: '3 revisions (Starter) / Unlimited refinements (Best Buy)',
+    turnaround: '3–5 Working Days',
+    revisions: 'Structured revisions (Starter) / Unlimited refinements (Best Buy)',
     deliverables: [
-      { title: 'Custom Vector Logo Concepts', detail: 'Original logo marks designed from scratch—never generic clip-art.' },
+      { title: 'Custom Vector Logo Concepts', detail: '3 to 5 original logo concepts designed from scratch—never generic clip-art.' },
       { title: 'Brand Identity & Style Guide', detail: 'Color palettes (HEX/RGB/CMYK), typography rules, and clear logo usage guidelines.' },
-      { title: 'Print & Web File Formats', detail: 'Scalable vector files (AI, EPS, SVG, PDF) plus transparent PNGs for digital use.' },
+      { title: 'Print & Web File Formats', detail: 'Scalable vector files (AI, EPS, SVG, PDF) plus transparent PNG, JPEG, and monochrome variants.' },
       { title: 'Social Media Branding Kit', detail: 'Profile pictures and cover banners sized for major platforms in our Best Buy package.' },
     ],
     idealFor: ['New startups & founders', 'Businesses undergoing a rebrand', 'E-commerce & D2C labels', 'Creators launching personal brands'],
     processSteps: [
       { step: '01', title: 'Brand Questionnaire', detail: 'We learn your industry, audience, values, and style preferences.' },
-      { step: '02', title: 'Concept Exploration', detail: 'We craft 2 to 5 distinct logo directions with real-world mockups.' },
-      { step: '03', title: 'Refinement & Vector Handover', detail: 'We polish your chosen mark and deliver all print, web, and source files.' },
+      { step: '02', title: 'Concept Exploration', detail: 'We craft 3 to 5 distinct logo directions with real-world mockups.' },
+      { step: '03', title: 'Refinement & Vector Handover', detail: 'We polish your chosen mark and transfer full copyright with all source files.' },
     ],
     faqs: [
       {
-        question: 'What is the difference between the Starter and Best Buy logo packages?',
-        answer: 'The Starter package (₹3,000 / $50) includes 2 modern concepts, print-ready vectors, and 3 revisions. The Best Buy package (₹5,000 / $75) includes 5 concepts, a full Brand Identity Style Guide, unlimited refinements, and a Social Media Pack.',
+        question: 'How many logo concepts and revisions do I get?',
+        answer:
+          'Every logo design project at Abridge Media Services includes 3 to 5 distinct initial concepts based on your brand brief, followed by structured revision rounds until you are completely satisfied. You receive full copyright ownership once the final design is approved.',
       },
       {
-        question: 'Will my logo scale cleanly for both websites and large banners?',
-        answer: 'Yes. All logos are created as 100% scalable vector artwork so they stay sharp from favicons and visiting cards up to outdoor signage.',
+        question: 'What formats are included in final logo delivery?',
+        answer:
+          'You receive scalable vector source files (AI, EPS, SVG, and PDF) for limitless resizing without quality loss, alongside transparent PNG, high-resolution JPEG, and monochrome variations for dark and light backgrounds.',
       },
       {
         question: 'Can you also design matching visiting cards and letterheads?',
@@ -324,25 +346,25 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/thumbnail-design',
     shortName: 'Thumbnail Design',
-    title: 'YouTube & Video Thumbnail Design Services | Abridge Media Services',
+    title: 'High-CTR YouTube Thumbnail Design Services | Abridge Media Services',
     description:
-      'High-CTR YouTube Thumbnail Design and online video graphics built to boost clicks, watch time, and channel growth. Fast delivery by Abridge Media Services.',
+      'Abridge Media Services designs scroll-stopping YouTube thumbnails engineered to boost your Click-Through Rate (CTR) and video views. 24–48 hour delivery.',
     keywords:
-      'thumbnail design, YouTube thumbnail designer, high CTR thumbnails, video thumbnail design, custom YouTube graphics, online graphic creation',
+      'thumbnail design, high-CTR YouTube thumbnail design, YouTube thumbnail designer, video thumbnail design, custom YouTube graphics, CTR optimization',
     category: 'Digital Experience',
-    h1: 'YouTube & Video Thumbnail Design',
-    subtitle: 'High-CTR thumbnails engineered with bold contrast, visual storytelling, and instant readability.',
+    h1: 'High-CTR YouTube Thumbnail Design Services',
+    subtitle: 'Abridge Media Services designs scroll-stopping YouTube thumbnails engineered to boost your Click-Through Rate (CTR) and video views. We combine expressive focal subjects, bold mobile-readable typography, and high-contrast color psychology tailored to your niche.',
     aiSummary:
-      'Abridge Media Services designs high-click-through-rate (CTR) thumbnails for YouTube creators, podcasts, educators, and brand video channels. Each custom 1280x720 thumbnail combines crisp subject cutouts, expressive typography, and color psychology—starting from ₹400 ($5) with rapid turnaround so your videos stand out in search and suggested feeds.',
+      'Abridge Media Services designs scroll-stopping YouTube thumbnails engineered to boost your Click-Through Rate (CTR) and video views. We combine expressive focal subjects, bold mobile-readable typography, and high-contrast color psychology tailored to your niche—delivered in 1280×720 HD starting from ₹400 ($5).',
     startingPriceINR: '₹400',
     startingPriceUSD: '$5',
     priceNote: 'Single custom thumbnail from ₹400 ($5); volume creator retainers available.',
     turnaround: '24–48 Hours',
     revisions: 'Up to 3 design revisions included',
     deliverables: [
-      { title: '1280×720 High-Res Thumbnails', detail: 'Crisp YouTube-compliant HD exports optimized for both mobile and desktop screens.' },
+      { title: '1280×720 High-Res Thumbnails', detail: 'YouTube-recommended 16:9 full-HD exports under 2MB optimized for mobile and desktop screens.' },
       { title: 'Click-Worthy Composition', detail: 'Strategic focal points, clean cutouts, facial expression enhancement, and depth.' },
-      { title: 'Bold Title Typography', detail: 'Short, punchy, readable text overlays designed to complement your video title.' },
+      { title: 'Bold Title Typography', detail: 'Short, punchy 3-to-5-word visual hooks designed to complement your video title.' },
       { title: 'Channel Consistency', detail: 'Cohesive color schemes and visual styles that make your uploads instantly recognizable.' },
     ],
     idealFor: ['YouTubers & vloggers', 'Podcasts & interview channels', 'Online educators & coaches', 'Tech, gaming & business channels'],
@@ -353,12 +375,14 @@ export const SERVICE_PAGES: ServicePageData[] = [
     ],
     faqs: [
       {
-        question: 'Why does custom thumbnail design matter for YouTube?',
-        answer: 'Your thumbnail is the biggest driver of Click-Through Rate (CTR). A clear, high-contrast visual hook gets more viewers to click when your video appears in search or home feeds.',
+        question: 'Why do custom YouTube thumbnails improve video performance?',
+        answer:
+          'Over 70% of YouTube watch time happens on mobile screens where thumbnails appear very small. Custom, high-contrast thumbnails with clear focal points and 3-to-5-word hooks stand out in crowded feeds, increasing CTR and signaling the YouTube algorithm to recommend your video wider.',
       },
       {
-        question: 'How fast can you deliver a YouTube thumbnail?',
-        answer: 'Most custom thumbnails are delivered within 24 to 48 hours, with up to 3 revisions included.',
+        question: 'What is the turnaround time for YouTube thumbnail designs?',
+        answer:
+          'Standard YouTube thumbnails are delivered within 24 to 48 hours in YouTube-recommended 1280×720 pixels (16:9) full-HD format under 2MB, with editable source files available on request for ongoing channel retainers.',
       },
       {
         question: 'Do you also design YouTube channel banners and web graphics?',
@@ -418,41 +442,43 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/book-design',
     shortName: 'Book Design',
-    title: 'Book Cover, E-Book & Magazine Design | Abridge Media Services',
+    title: 'Professional Book Cover & E-Book Cover Design Services | Abridge Media Services',
     description:
-      'Professional Book Cover Design (₹400+), Magazine Layout (₹750+) & E-Book Design for authors and publishers. Print spine, Kindle & digital ready.',
+      'Abridge Media Services creates genre-aligned book covers for independent authors, educators, and publishing houses. Print wrap, KDP, Notion Press & e-book ready.',
     keywords:
-      'book design, book cover design, ebook cover design, magazine design, publication layout, cover page design, Kindle cover designer',
+      'book design, book cover design, e-book cover design, Amazon KDP cover, Notion Press, Pothi, spine width, magazine design, cover page design',
     category: 'The Plus',
-    h1: 'Book Cover & Magazine Design',
-    subtitle: 'Compelling covers and editorial magazine layouts that give your publication shelf and screen appeal.',
+    h1: 'Professional Book Cover & E-Book Cover Design Services',
+    subtitle: 'Abridge Media Services creates genre-aligned book covers for independent authors, educators, and publishing houses. We deliver complete front, spine, and back cover layouts formatted for both digital e-book platforms and commercial print-on-demand distribution.',
     aiSummary:
-      'Abridge Media Services crafts compelling Book Cover Designs, Cover Pages starting at ₹400 ($5), and multi-page Magazine layouts starting at ₹750 ($10) for independent authors, publishers, and brands. Every cover is tailored to your genre and formatted accurately for print (front, spine, back wrap) as well as Kindle and e-book stores.',
+      'Abridge Media Services creates genre-aligned book covers for independent authors, educators, and publishing houses. We deliver complete front, spine, and back cover layouts formatted for both digital e-book platforms and commercial print-on-demand distribution. Cover Page designs start at ₹400 ($5) and Magazine layouts start at ₹750 ($10).',
     startingPriceINR: '₹400 – ₹750',
     startingPriceUSD: '$5 – $10',
     priceNote: 'Cover Page Design from ₹400 ($5); Magazine & editorial layouts from ₹750 ($10).',
     turnaround: '2–5 Business Days',
     revisions: 'Up to 3 design revisions included',
     deliverables: [
-      { title: 'Print & E-Book Cover Design', detail: 'Front cover, spine calculation, and back cover blurb layout ready for Amazon KDP and print.' },
+      { title: 'Print & E-Book Cover Design', detail: 'Front cover, exact spine width calculation, and back cover wrap for KDP, Notion Press, Pothi & print.' },
       { title: 'Magazine & Editorial Layouts', detail: 'Clean multi-column typography, image grids, and structured page spreads.' },
       { title: '3D Promotional Mockups', detail: 'Realistic book and magazine mockups to help you market your launch online.' },
       { title: 'Press-Ready & Digital Files', detail: 'High-resolution 300 DPI CMYK PDF with bleed plus RGB JPEG/PNG for e-books.' },
     ],
     idealFor: ['Self-published & KDP authors', 'Corporate & lifestyle magazines', 'E-book creators & educators', 'Academic & annual reports'],
     processSteps: [
-      { step: '01', title: 'Manuscript & Genre Brief', detail: 'Share your book title, blurb, page count/trim size, and tone references.' },
+      { step: '01', title: 'Manuscript & Genre Brief', detail: 'Share your book title, subtitle, author, blurb, genre, page count, and trim size.' },
       { step: '02', title: 'Cover & Spread Crafting', detail: 'We design standout cover art and clean editorial typography.' },
-      { step: '03', title: 'Print-Ready Wrap Delivery', detail: 'Final files delivered with exact bleed, margins, and spine sizing.' },
+      { step: '03', title: 'Print-Ready Wrap Delivery', detail: 'Final 300 DPI CMYK PDFs delivered with exact bleed, margins, and spine sizing.' },
     ],
     faqs: [
       {
-        question: 'Do you design both print book covers and Kindle/e-book covers?',
-        answer: 'Yes. We provide e-book front covers as well as full print-ready wraps (front, spine, and back cover) formatted for Amazon KDP and offset printers.',
+        question: 'Do you design covers for both e-books and print books?',
+        answer:
+          'Yes, Abridge Media Services designs covers for Amazon Kindle (KDP), Notion Press, Pothi, and offset print editions. Print covers include exact spine width calculations based on your final page count and paper type, along with 300 DPI CMYK print-ready PDFs.',
       },
       {
-        question: 'What is the starting price for book cover and magazine design?',
-        answer: 'Cover Page designs start at ₹400 ($5) and Magazine layouts start at ₹750 ($10), depending on page count and complexity.',
+        question: 'What information is needed to start a book cover design?',
+        answer:
+          'To begin your book cover design, share your book title, subtitle, author name, genre, target audience, back-cover blurb, and final page count with trim size if you need a full print wrap.',
       },
       {
         question: 'Can you create 3D book mockups for social media promotion?',
@@ -559,24 +585,24 @@ export const SERVICE_PAGES: ServicePageData[] = [
   {
     slug: '/packaging-design',
     shortName: 'Packaging Design',
-    title: 'Product Packaging, Label & Merchandise Design | Abridge Media',
+    title: 'Product Packaging & Brand Identity Design Services | Abridge Media',
     description:
-      'Standout Product Packaging (₹2,000+), Label Design, Menu Cards (₹3,000) & Cap/T-Shirt Design. Shelf-ready die-line artwork by Abridge Media Services.',
+      'Abridge Media Services creates print-ready product packaging, labels, logos, and brand collateral that stand out on retail shelves and e-commerce marketplaces.',
     keywords:
-      'packaging design, product packaging designer, label design, merchandise design, t-shirt design, cap printing design, menu card design',
+      'packaging design, product packaging designer, brand identity design, stand-up pouches, food spice packaging, rigid boxes, bottle labels, cosmetic cartons, dielines',
     category: 'The Plus',
-    h1: 'Product Packaging, Label & Merchandise Design',
-    subtitle: 'Shelf-ready boxes, product labels, restaurant menus, and wearable brand merchandise.',
+    h1: 'Product Packaging & Brand Identity Design Services',
+    subtitle: 'Abridge Media Services creates print-ready product packaging, labels, logos, and brand collateral that stand out on retail shelves and e-commerce marketplaces. We combine market research with high-impact visual design to turn first-time viewers into loyal customers.',
     aiSummary:
-      'Abridge Media Services provides specialized Product Packaging Design starting at ₹2,000, Label Design, Menu Card Design starting at ₹3,000, and Cap & T-Shirt Designing and Printing. We deliver accurate die-line artwork, nutrition/ingredient label layouts, and 3D product mockups ready for manufacturing and e-commerce.',
+      'Abridge Media Services creates print-ready product packaging, labels, logos, and brand collateral that stand out on retail shelves and e-commerce marketplaces. We combine market research with high-impact visual design to turn first-time viewers into loyal customers. Product packaging starts from ₹2,000 ($25) and includes print-ready CMYK vector dielines.',
     startingPriceINR: '₹2,000',
     startingPriceUSD: '$25',
     priceNote: 'Product Packaging from ₹2,000; Menu Cards from ₹3,000; custom quotes for labels & merch.',
     turnaround: '3–7 Business Days',
     revisions: 'Up to 3 design revisions included',
     deliverables: [
-      { title: 'Product Box & Die-Line Artwork', detail: 'Accurate packaging wraps aligned to your manufacturer die-line measurements.' },
-      { title: 'Bottle, Jar & Pouch Labels', detail: 'Clear, compliant front and back labels with barcode and ingredient panels.' },
+      { title: 'Product Box & Die-Line Artwork', detail: 'Accurate packaging wraps aligned to your manufacturer die-line measurements with bleed margins.' },
+      { title: 'Stand-Up Pouches, Bottle & Jar Labels', detail: 'Food, spice, cosmetic, and D2C labels with compliant nutritional and barcode panels.' },
       { title: 'Cap & T-Shirt Merch Design', detail: 'Custom apparel graphics and wearable brand identity prepared for screen or DTF print.' },
       { title: 'Menu Cards & Retail Signage', detail: 'Appetizing restaurant menus and in-store display graphics.' },
     ],
@@ -584,20 +610,23 @@ export const SERVICE_PAGES: ServicePageData[] = [
     processSteps: [
       { step: '01', title: 'Dimensions & Die-Line Setup', detail: 'Share your box/label dimensions, mandatory product copy, and brand assets.' },
       { step: '02', title: 'Packaging & Label Design', detail: 'We craft shelf-stopping visuals and clear typography for physical surfaces.' },
-      { step: '03', title: 'Production Files & 3D Mockups', detail: 'Exported in press-ready vector PDF along with e-commerce preview mockups.' },
+      { step: '03', title: 'Production Files & 3D Mockups', detail: 'Exported in press-ready CMYK AI/EPS/PDF vector files plus digital mockups.' },
     ],
     faqs: [
       {
-        question: 'How much does product packaging design cost?',
-        answer: 'Product Packaging design starts at ₹2,000, and Menu Card design starts at ₹3,000, with up to 3 revisions included.',
+        question: 'What types of product packaging design do you offer?',
+        answer:
+          'Abridge Media Services designs custom stand-up pouches, food and spice packaging, rigid boxes, bottle labels, cosmetic cartons, and e-commerce shipping sleeves. We deliver complete print-ready vector files with accurate dielines, bleed margins, and CMYK color profiles ready for commercial printing.',
       },
       {
-        question: 'Do you work with custom box die-lines from our printer?',
-        answer: 'Yes. Simply share the die-line template from your packaging manufacturer and we align all artwork, bleeds, and folds accurately.',
+        question: 'What files do I receive after my logo and packaging design is complete?',
+        answer:
+          'You receive full commercial ownership along with print-ready AI, EPS, PDF, and SVG vector source files, plus high-resolution PNG and JPEG files for digital and e-commerce use. All packaging files include accurate dieline templates and color specifications for your printing vendor.',
       },
       {
-        question: 'Do you also design T-shirts and caps for company branding?',
-        answer: 'Yes, under The Plus pillar we provide Cap & T-Shirt Designing and Printing artwork for events, staff uniforms, and brand merchandise.',
+        question: 'How does professional packaging design increase product sales?',
+        answer:
+          'Shoppers take less than 7 seconds to judge a product on a retail shelf or online listing. Clear typography, compliant nutritional or product labeling, and distinctive brand colors build immediate trust, justify premium pricing, and drive higher click-through and repeat purchase rates.',
       },
     ],
     relatedSlugs: ['/logo-design', '/book-design', '/graphic-design', '/poster-design'],
@@ -661,5 +690,233 @@ export const WORK_SAMPLES_DATA = [
     category: 'Website & Thumbnail Design',
     alt: 'High-CTR YouTube thumbnail and website visual design showcase',
     link: '/thumbnail-design',
+  },
+];
+
+export interface PortfolioCaseStudy {
+  position: number;
+  schemaName: string;
+  title: string;
+  websiteLabel: string;
+  websiteUrl: string;
+  industry: string;
+  region: string;
+  challenge: string;
+  solution: string;
+  deliverables: string;
+  businessImpact: string;
+  serviceLinks: { label: string; to: string }[];
+}
+
+export const PORTFOLIO_CASE_STUDIES: PortfolioCaseStudy[] = [
+  {
+    position: 1,
+    schemaName: 'Mind Park Foundation (Manodyan)',
+    title: '1. Manodyan | Mind Park Foundation – Mental Wellness & Active Aging Website',
+    websiteLabel: 'mindparkfoundation.com',
+    websiteUrl: 'https://mindparkfoundation.com',
+    industry: 'Healthcare & Mental Wellness',
+    region: 'India',
+    challenge:
+      'Mind Park Foundation needed a warm, accessible, and trustworthy digital presence to introduce Manodyan, its urban sanctuary dedicated to mental wellness and active aging. The site required a calm user experience that clearly communicated programs to seniors, caregivers, and families.',
+    solution:
+      'Abridge Media Services designed a serene, mobile-responsive website with clear program navigation, wellness resource sections, and simplified inquiry workflows tailored for visitors of all age groups.',
+    deliverables:
+      'Custom UI/UX design, responsive web development, database integration, and on-page SEO setup.',
+    businessImpact:
+      'Established an authoritative online platform that builds immediate trust with families and streamlines community program inquiries.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Graphic Design', to: '/graphic-design' },
+    ],
+  },
+  {
+    position: 2,
+    schemaName: 'Dr. Amit Deshpande – Urologist Nagpur',
+    title: '2. Dr. Amit Deshpande – Healthcare & Urology Practice Website',
+    websiteLabel: 'urologistnagpur.com',
+    websiteUrl: 'https://urologistnagpur.com',
+    industry: 'Medical & Healthcare',
+    region: 'Nagpur, India',
+    challenge:
+      'Consultant Urologist, Urosurgeon, and Andrologist Dr. Amit Deshpande required a comprehensive medical portal to educate patients on complex urological procedures while making clinic appointments and urgent contact effortless.',
+    solution:
+      'Abridge Media Services built an informative, patient-friendly healthcare website featuring dedicated patient education guides (PCNL, URS, TURP, Cystoscopy, Uroflowmetry), procedure explanations, verified patient testimonials, and one-click WhatsApp and phone appointment actions.',
+    deliverables:
+      'Multi-page medical portal, patient education resource architecture, click-to-call/WhatsApp integration, and local medical SEO.',
+    businessImpact:
+      'Improved patient awareness prior to consultations and increased direct appointment inquiries from local and regional patients.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Digital Marketing', to: '/digital-marketing' },
+    ],
+  },
+  {
+    position: 3,
+    schemaName: 'Cars31.in Used Car Portal',
+    title: '3. Cars31.in – Used Car Buy & Sell Web Portal',
+    websiteLabel: 'cars31.in',
+    websiteUrl: 'https://cars31.in',
+    industry: 'Automotive & Classifieds',
+    region: 'India',
+    challenge:
+      'Cars31 needed a fast, easy-to-manage automotive marketplace where buyers could browse pre-owned vehicles effortlessly and sellers could submit car details without technical friction.',
+    solution:
+      'Abridge Media Services engineered a responsive used-car listing portal equipped with structured vehicle inventory displays, buyer/seller lead capture forms, and a custom admin control panel for instant stock updates.',
+    deliverables:
+      'Full-stack web portal, custom inventory admin dashboard, mobile-first browsing UI, and lead routing forms.',
+    businessImpact:
+      'Enabled rapid inventory publishing by the dealership team and streamlined direct buyer-seller inquiries.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Digital Marketing', to: '/digital-marketing' },
+    ],
+  },
+  {
+    position: 4,
+    schemaName: 'Reva Residency Boutique Serviced Apartments',
+    title: '4. Reva Residency – Boutique Serviced Apartment Website',
+    websiteLabel: 'revastays.in',
+    websiteUrl: 'https://revastays.in',
+    industry: 'Hospitality & Serviced Stays',
+    region: 'Nagpur, India',
+    challenge:
+      'Reva Residency wanted to reduce dependence on third-party hotel aggregators by showcasing its boutique serviced apartments in Ambazari, Nagpur, and capturing direct room bookings online.',
+    solution:
+      'Abridge Media Services created a visually inviting hospitality website highlighting room amenities, location advantages, high-resolution property galleries, and friction-free direct booking inquiry channels.',
+    deliverables:
+      'Hospitality website design, mobile-first gallery layout, direct inquiry integration, and local search optimization.',
+    businessImpact:
+      'Boosted direct guest inquiries for short-term and corporate stays while strengthening local search visibility.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Brochure Design', to: '/brochure-design' },
+    ],
+  },
+  {
+    position: 5,
+    schemaName: 'Zest and Zayka',
+    title: '5. Zest and Zayka – Cafe, Mocktails & Street Food Brand Website',
+    websiteLabel: 'zestandzayka.in',
+    websiteUrl: 'https://zestandzayka.in',
+    industry: 'Food & Beverage / Quick-Service Cafe',
+    region: 'India',
+    challenge:
+      'Zest and Zayka needed a vibrant digital menu and brand showcase to highlight its wide variety of mocktails, fresh juices, chaat, snacks, fruit kulfi, and fruit shots to local diners and event customers.',
+    solution:
+      'Abridge Media Services designed an appetizing, mobile-optimized F&B website with categorized digital menu sections, bold visual presentation, and fast loading speeds for customers browsing on smartphones.',
+    deliverables:
+      'Custom F&B brand website, interactive digital menu showcase, mobile UX optimization, and local SEO setup.',
+    businessImpact:
+      'Enhanced brand appeal for walk-in and catering customers with a modern, shareable online menu.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Packaging Design', to: '/packaging-design' },
+    ],
+  },
+  {
+    position: 6,
+    schemaName: 'Malhar Industries',
+    title: '6. Malhar Industries – Industrial Manufacturing & B2B Lead Generation Website',
+    websiteLabel: 'malharindustries.com',
+    websiteUrl: 'https://malharindustries.com',
+    industry: 'Industrial Manufacturing & Engineering',
+    region: 'India',
+    challenge:
+      'Malhar Industries required a professional B2B corporate website capable of presenting its industrial capabilities clearly and converting search traffic from Google Ads into qualified commercial leads.',
+    solution:
+      'Abridge Media Services built a structured B2B website backed by cloud database architecture, clear product and capability pages, and conversion-tracked inquiry forms paired with targeted Google Ads campaigns.',
+    deliverables:
+      'Corporate B2B website, backend database setup, Google Tag Manager conversion tracking, and Google Ads integration.',
+    businessImpact:
+      'Created a reliable digital lead-generation funnel connecting industrial buyers directly with the sales team.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Digital Marketing', to: '/digital-marketing' },
+    ],
+  },
+  {
+    position: 7,
+    schemaName: 'S.A.M. Tutorials Nagpur',
+    title: '7. S.A.M. Tutorials – Academic & Competitive Exam Coaching Website',
+    websiteLabel: 'samtutorials.in',
+    websiteUrl: 'https://samtutorials.in',
+    industry: 'Education & Test Preparation',
+    region: 'Nagpur, India',
+    challenge:
+      'S.A.M. Tutorials needed an authoritative educational website to attract students and parents searching for C.B.S.E., I.C.S.E., and JEE/NEET coaching programs.',
+    solution:
+      'Abridge Media Services developed an organized academic portal detailing course tracks, batch highlights, faculty strengths, and streamlined admission inquiry forms optimized for mobile parents and students.',
+    deliverables:
+      'Education portal design, course architecture, admission lead forms, and local academic SEO.',
+    businessImpact:
+      'Positioned the institute prominently in local search results and simplified student enrollment inquiries.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Poster Design', to: '/poster-design' },
+    ],
+  },
+  {
+    position: 8,
+    schemaName: 'The Risk – Amit Kavishwar Score Trading System',
+    title: '8. The Risk (Amit Kavishwar) – Financial Education & Index Trading Website',
+    websiteLabel: 'therisk.in',
+    websiteUrl: 'https://therisk.in',
+    industry: 'FinTech & Stock Market Education',
+    region: 'India',
+    challenge:
+      'Financial educator Amit Kavishwar needed a high-converting landing experience to present the Score Trading System and enroll learners in a structured 2-month index trading mastery program.',
+    solution:
+      'Abridge Media Services crafted a high-trust conversion-focused website breaking down the curriculum, mentor credentials, program outcomes, and direct enrollment inquiry flows.',
+    deliverables:
+      'Conversion-oriented landing architecture, mobile-first course showcase, WhatsApp/inquiry integration, and SEO metadata.',
+    businessImpact:
+      'Increased course clarity for prospective traders and streamlined direct cohort registration inquiries.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Thumbnail Design', to: '/thumbnail-design' },
+    ],
+  },
+  {
+    position: 9,
+    schemaName: "Oliveir's Premium Kulfi & Ice Cream Australia",
+    title: "9. Oliveir's – Gourmet Kulfi & Ice Cream Brand Website",
+    websiteLabel: 'oliveirs.com.au',
+    websiteUrl: 'https://oliveirs.com.au',
+    industry: 'International Food & Beverage',
+    region: 'Australia',
+    challenge:
+      "Australian gourmet dessert brand Oliveir's needed an international-grade website to showcase its authentic kulfi and ice cream flavors while capturing retail, wholesale, and catering inquiries across Australia.",
+    solution:
+      'Abridge Media Services designed a visually rich, responsive F&B brand website highlighting flavor collections, brand storytelling, retail availability, and streamlined wholesale contact channels.',
+    deliverables:
+      'Custom international brand website, mobile-first flavor showcase, high-speed image optimization, and on-page SEO.',
+    businessImpact:
+      'Strengthened brand positioning in the Australian market and provided a polished storefront for retail and stockist inquiries.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Packaging Design', to: '/packaging-design' },
+    ],
+  },
+  {
+    position: 10,
+    schemaName: 'Varma Real Estate',
+    title: '10. Varma Real Estate – Property Listing & Advisory Website',
+    websiteLabel: 'varmarealestate.co',
+    websiteUrl: 'https://varmarealestate.co',
+    industry: 'Real Estate & Property Advisory',
+    region: 'India',
+    challenge:
+      'Varma Real Estate required a modern property advisory website where residential and commercial buyers could explore featured listings and connect directly with property consultants on mobile devices.',
+    solution:
+      'Abridge Media Services engineered a clean, structured real estate portal featuring categorized property showcases, neighborhood highlights, and instant WhatsApp and contact-form lead capture.',
+    deliverables:
+      'Real estate web platform, mobile-responsive property presentation, click-to-call/WhatsApp workflows, and SEO schema setup.',
+    businessImpact:
+      'Improved credibility with property buyers and investors while capturing direct site-visit and consultation requests.',
+    serviceLinks: [
+      { label: 'Website Design', to: '/website-design' },
+      { label: 'Brochure Design', to: '/brochure-design' },
+    ],
   },
 ];

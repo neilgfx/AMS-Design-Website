@@ -13,6 +13,16 @@ interface ServiceSchemaInput {
   priceINR?: string;
 }
 
+interface CollectionItemInput {
+  name: string;
+  url: string;
+}
+
+interface CollectionSchemaInput {
+  name: string;
+  items: CollectionItemInput[];
+}
+
 interface SeoHeadProps {
   title: string;
   description: string;
@@ -23,6 +33,7 @@ interface SeoHeadProps {
   breadcrumbs?: BreadcrumbItem[];
   faqs?: FaqItem[];
   serviceSchema?: ServiceSchemaInput;
+  collectionSchema?: CollectionSchemaInput;
   includeCatalog?: boolean;
 }
 
@@ -56,6 +67,7 @@ const SeoHead: React.FC<SeoHeadProps> = ({
   breadcrumbs,
   faqs,
   serviceSchema,
+  collectionSchema,
   includeCatalog = false,
 }) => {
   useEffect(() => {
@@ -112,9 +124,34 @@ const SeoHead: React.FC<SeoHeadProps> = ({
         image: ogImage,
         email: SITE_CONFIG.email,
         telephone: SITE_CONFIG.phone,
-        areaServed: 'Worldwide',
+        address: {
+          '@type': 'PostalAddress',
+          ...SITE_CONFIG.address,
+        },
+        areaServed: ['India', 'Worldwide'],
+        openingHours: SITE_CONFIG.openingHours,
         priceRange: '₹400 - ₹45,000',
-        sameAs: [SITE_CONFIG.storeUrl, SITE_CONFIG.blogUrl],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: SITE_CONFIG.aggregateRating.ratingValue,
+          reviewCount: SITE_CONFIG.aggregateRating.reviewCount,
+        },
+        knowsAbout: [
+          'Website Design and Development',
+          'Graphic Design',
+          'Digital Marketing',
+          'Logo Design',
+          'Product Packaging Design',
+          'Brochure and Visiting Card Design',
+          'Book Cover Design',
+          'YouTube Thumbnail Design',
+        ],
+        sameAs: [
+          SITE_CONFIG.gmbUrl,
+          SITE_CONFIG.instagramUrl,
+          SITE_CONFIG.storeUrl,
+          SITE_CONFIG.blogUrl,
+        ],
         contactPoint: [
           {
             '@type': 'ContactPoint',
@@ -210,6 +247,24 @@ const SeoHead: React.FC<SeoHeadProps> = ({
       });
     }
 
+    if (collectionSchema && collectionSchema.items.length > 0) {
+      graph.push({
+        '@type': 'CollectionPage',
+        name: collectionSchema.name,
+        url: canonicalUrl,
+        creator: { '@id': orgId },
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: collectionSchema.items.map((item, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: item.name,
+            url: item.url,
+          })),
+        },
+      });
+    }
+
     const ldJson = {
       '@context': 'https://schema.org',
       '@graph': graph,
@@ -223,7 +278,7 @@ const SeoHead: React.FC<SeoHeadProps> = ({
       document.head.appendChild(script);
     }
     script.textContent = JSON.stringify(ldJson);
-  }, [title, description, keywords, path, ogImage, noindex, breadcrumbs, faqs, serviceSchema, includeCatalog]);
+  }, [title, description, keywords, path, ogImage, noindex, breadcrumbs, faqs, serviceSchema, collectionSchema, includeCatalog]);
 
   return null;
 };

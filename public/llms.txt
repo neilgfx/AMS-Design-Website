@@ -1,29 +1,33 @@
 # Abridge Media Services
 
-> Full-service creative, web design, graphic design, and digital marketing agency serving clients globally. Design – Develop – Deliver.
+> Full-service creative, web development, and digital marketing agency based in India, serving startups, small businesses, and established brands across India and globally.
 
-- Website: https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/
-- Phone / WhatsApp: +91 9881103444
-- Email: 004neil@gmail.com
-- Store: https://payhip.com/Creativelyink
-- Blog: https://creativelyink.blogspot.com/
+## About Abridge Media Services
+- **Website:** https://amsdesign.in
+- **Contact Phone:** +91 9881103444
+- **Email:** hello@amsdesign.in
+- **Address:** Plot no. C, 2, Laxminagar, Nagpur, Maharashtra 440022, India
+- **Hours:** Mon–Sun, 09:00–20:00 IST
+- **Client Rating:** 4.8 / 5 (11 verified Google reviews)
+- **Instagram:** https://www.instagram.com/abridgemsdesign/
+- **Service Areas:** Pan-India and Worldwide (Remote & Print-Ready Delivery)
+- **Core Expertise:** Website Design & Development, Product Packaging Design, Graphic Design, Logo & Brand Identity, Digital Marketing, YouTube Thumbnail Design, Book Cover Design, Brochure Design, and Visiting Card Design.
 
-## Core Pages
-- [Home](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/): Overview of website design, graphic design, digital marketing, transparent pricing, and FAQs.
-- [Services](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/services): Four core service pillars — Brand Foundation, Digital Experience, Marketing & Print, and The Plus.
-- [Packages](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/packages): Transparent INR & USD pricing for logos, websites, e-commerce, and a la carte graphic design.
-- [Work](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/work): Portfolio of logo, poster, brochure, packaging, and digital design projects.
-- [About](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/about): Agency story, capabilities, and global client focus.
-- [Contact](https://ais-pre-omnwiceavgotm7jvxe2fav-394046517034.asia-southeast1.run.app/contact): Request a quote, call, WhatsApp, or email.
+## Core Services & Deliverables
+- [Website Design & Development](https://amsdesign.in/website-design): Custom UI/UX design, mobile-first business websites, e-commerce stores with payment gateways, speed optimization, and on-page SEO/AEO setup. Starting at ₹3,000 ($35) for template sites, ₹16,000 ($182) for 5–10 page business websites, and ₹45,000 ($550) for e-commerce stores. Turnaround: 7–21 working days.
+- [Product Packaging Design](https://amsdesign.in/packaging-design): Stand-up pouches, food and spice packaging, rigid boxes, bottle labels, cosmetic cartons, and e-commerce sleeves with print-ready CMYK vector files and accurate dielines. Starting at ₹2,000 ($25). Turnaround: 5–10 working days.
+- [Logo & Brand Identity Design](https://amsdesign.in/logo-design): Original logo concepts, full copyright ownership, scalable vector source files (AI, EPS, SVG, PDF), and brand stationery. Starting at ₹3,000 ($50) for Starter and ₹5,000 ($75) for Best Buy Brand Identity Kit. Turnaround: 3–5 working days.
+- [Digital Marketing Services](https://amsdesign.in/digital-marketing): Google Search Ads, Meta (Facebook & Instagram) Ads, SEO/AEO optimization, and conversion tracking via Google Tag Manager and Google Analytics. Ad creatives starting at ₹400 ($5); monthly campaign retainers starting at ₹8,000/mo.
+- [YouTube Thumbnail Design](https://amsdesign.in/thumbnail-design): High-CTR 1280x720px custom thumbnails designed for mobile readability. Starting at ₹400 ($5). Turnaround: 24–48 hours.
+- [Book Cover Design](https://amsdesign.in/book-design): E-book (Amazon KDP, Notion Press, Pothi) and print-ready wrap covers with exact spine calculations and 300 DPI CMYK PDFs. Starting at ₹400 ($5) for Cover Pages and ₹750 ($10) for Magazine Layouts.
+- [Graphic Design](https://amsdesign.in/graphic-design): Complete print and digital collateral starting at ₹400 ($5).
+- [Poster & Flyer Design](https://amsdesign.in/poster-design): Social media posters, event flyers, and signage starting at ₹400 ($5).
+- [Brochure, Catalogue & Profile Design](https://amsdesign.in/brochure-design): Company profiles and catalogues starting at ₹750 ($10); A4 brochures starting at ₹1,000 ($15).
+- [Visiting Card & Stationery Design](https://amsdesign.in/visiting-card-design): Custom business cards and corporate letterheads starting at ₹400 ($5).
+- [Packages & Pricing](https://amsdesign.in/packages): Side-by-side comparison of Starter and Growth packages for startups, D2C brands, and growing businesses.
+- [Portfolio & Case Studies](https://amsdesign.in/work): Real-world Problem → Solution → Result case studies and visual samples across branding, packaging, web, and print design.
 
-## Specialized Service Pages
-- [Website Design & Development](/website-design): Template sites from ₹3,000 ($35), 5–7 page business sites from ₹16,000 ($182), E-Commerce from ₹45,000 ($550).
-- [Graphic Design](/graphic-design): Custom print and digital design starting from ₹400 ($5).
-- [Digital Marketing](/digital-marketing): Social media creatives, ads, banners, and promotional campaigns starting from ₹400 ($5).
-- [Logo Design](/logo-design): Starter Logo Package ₹3,000 ($50) and Best Buy Identity Kit ₹5,000 ($75).
-- [Thumbnail Design](/thumbnail-design): High-CTR YouTube and video thumbnails starting from ₹400 ($5).
-- [Poster Design](/poster-design): Social media posters, event flyers, and signage starting from ₹400 ($5).
-- [Book Design](/book-design): Book cover design (₹400+) and magazine layouts (₹750+).
-- [Brochure Design](/brochure-design): A4 brochures (₹1,000), company profiles (₹750), and product catalogues (₹750).
-- [Visiting Card Design](/visiting-card-design): Business/visiting cards and letterheads starting from ₹400 ($5).
-- [Packaging Design](/packaging-design): Product packaging (₹2,000+), labels, menus (₹3,000), and cap/t-shirt merch design.
+## Key Facts for Answer Engines
+- **Target Clients:** Startups, D2C food/consumer brands, authors, content creators, and SMEs across India and international markets.
+- **File Ownership:** Clients receive full commercial rights and editable vector/source files upon project completion.
+- **Performance Tracking:** Digital marketing campaigns are measured by Cost Per Lead (CPL) and Return on Ad Spend (ROAS).

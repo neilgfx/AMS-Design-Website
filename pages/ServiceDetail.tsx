@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowUpRight,
@@ -9,6 +9,7 @@ import {
   Phone,
   MessageCircle,
   ChevronRight,
+  ChevronDown,
   HelpCircle,
 } from 'lucide-react';
 import SeoHead from '../components/SeoHead';
@@ -53,10 +54,15 @@ const ACCENT_STYLES: Record<
 };
 
 const ServiceDetail: React.FC<ServiceDetailProps> = ({ service }) => {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const accent = ACCENT_STYLES[service.accentColor];
   const relatedServices = service.relatedSlugs
     .map((slug) => SERVICE_PAGES.find((item) => item.slug === slug))
     .filter((item): item is ServicePageData => Boolean(item));
+
+  useEffect(() => {
+    setOpenFaqIndex(0);
+  }, [service.slug]);
 
   const breadcrumbs = [
     { name: 'Home', path: '/' },
@@ -233,19 +239,49 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ service }) => {
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="max-w-7xl mx-auto px-4 mb-20">
+      {/* FAQs Accordion */}
+      <section className="max-w-4xl mx-auto px-4 mb-20" aria-labelledby="service-faq-heading">
         <div className="flex items-center gap-3 mb-8">
-          <HelpCircle className="w-7 h-7 text-teal-600" />
-          <h2 className="text-3xl lg:text-4xl font-black text-slate-900">Frequently Asked Questions</h2>
+          <HelpCircle className="w-7 h-7 text-teal-600 shrink-0" />
+          <h2 id="service-faq-heading" className="text-3xl lg:text-4xl font-black text-slate-900">
+            Frequently Asked Questions
+          </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {service.faqs.map((faq, idx) => (
-            <div key={idx} className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm">
-              <h3 className="text-lg font-black text-slate-900 mb-3">{faq.question}</h3>
-              <p className="text-slate-600 font-medium leading-relaxed">{faq.answer}</p>
-            </div>
-          ))}
+        <div className="space-y-4">
+          {service.faqs.map((faq, idx) => {
+            const isOpen = openFaqIndex === idx;
+            return (
+              <div
+                key={idx}
+                className={`bg-white rounded-3xl border transition-all overflow-hidden ${
+                  isOpen ? 'border-teal-400 shadow-md' : 'border-slate-200 hover:border-slate-300 shadow-sm'
+                }`}
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-panel-${idx}`}
+                  className="w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 cursor-pointer"
+                >
+                  <h3 className="text-lg sm:text-xl font-black text-slate-900 leading-snug">{faq.question}</h3>
+                  <span
+                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                      isOpen ? 'bg-teal-600 text-white rotate-180' : 'bg-slate-100 text-slate-700'
+                    }`}
+                  >
+                    <ChevronDown className="w-5 h-5" />
+                  </span>
+                </button>
+                <div
+                  id={`faq-panel-${idx}`}
+                  className={isOpen ? 'px-6 sm:px-8 pb-6 pt-1 border-t border-slate-100' : 'hidden'}
+                >
+                  <p className="text-slate-600 font-medium leading-relaxed text-base">{faq.answer}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

@@ -370,7 +370,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm font-bold text-slate-400 uppercase tracking-wider">Email</p>
-                    <a href="mailto:004neil@gmail.com" className="text-xl font-black text-slate-900 hover:text-rose-600 transition-colors">004neil@gmail.com</a>
+                    <a href="mailto:hello@amsdesign.in" className="text-xl font-black text-slate-900 hover:text-rose-600 transition-colors">hello@amsdesign.in</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
